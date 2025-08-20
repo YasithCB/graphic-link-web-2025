@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white; /* optional, makes text visible */
+}
+
+a{
+    text-decoration: none;
+}
+
+/*custom*/
+.cursor {
+    display: inline-block;
+    vertical-align: bottom; /* aligns with text bottom */
+    animation: blink 1s step-end infinite;
+    margin-left: 2px; /* small spacing from text */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.fixed-text {
+    min-height: 65px;   /* keep consistent height */
+    line-height: 1.3;   /* control spacing between lines */
+}
+
