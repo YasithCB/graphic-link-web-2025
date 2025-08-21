@@ -1,0 +1,35 @@
+.layout {
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.with-sidebar .main-content {
+    flex: 1;
+    margin-left: 280px; /* width of sidebar */
+    transition: margin-left 0.3s ease;
+}
+
+.full-width .main-content {
+    flex: 1;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+.sidebar {
+    width: 280px;
+    background: #111;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.4s ease;
+    z-index: 999;
+}
+
+.sidebar.show {
+    transform: translateX(0);
+}
+
+.sidebar.hide {
+    transform: translateX(-100%);
+}
