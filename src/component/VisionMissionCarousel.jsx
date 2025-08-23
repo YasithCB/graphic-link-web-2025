@@ -27,7 +27,7 @@ export default function VisionMissionCarousel() {
   }, [items.length]);
 
   return (
-    <div className="w-full bg-yellow py-8">
+    <div className="w-full bg-black py-8">
       <div className="relative w-full max-w-2xl mx-auto flex items-center justify-center py-3">
         <AnimatePresence mode="wait">
           <motion.div
@@ -36,10 +36,10 @@ export default function VisionMissionCarousel() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 1 }}
-            className="text-center"
+            className="text-center py-4"
           >
-            <h4 className="font-bold text-black mb-2">{items[index].title}</h4>
-            <p className="text-black px-5 mb-0">{items[index].text}</p>
+            <h4 className="font-bold mb-2">{items[index].title}</h4>
+            <p className="px-5 mb-0">{items[index].text}</p>
           </motion.div>
         </AnimatePresence>
       </div>

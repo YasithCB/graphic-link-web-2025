@@ -1,0 +1,42 @@
+.mini-navbar {
+    width: 30px;
+    height: 100vh;
+    background: #e6bb1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.mini-nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    writing-mode: vertical-rl; /* make text vertical */
+    transform: rotate(180deg); /* make text upright */
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.mini-nav-links a:hover {
+     background-color: #111111;
+    color: white;
+    padding: 20px 8px
+ }
+
+.mini-nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.mini-nav-links hr {
+    width: 100%;
+    border: none;
+    border-left: 1px solid #555; /* vertical line separator */
+    height: 20px;
+    margin: 8px 0;
+}

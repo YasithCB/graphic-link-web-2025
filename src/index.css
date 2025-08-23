@@ -1,11 +1,33 @@
+:root {
+    --primary-color: #f3c623; /* default yellow */
+    --primary-color-dark: #bc9717;
+    --primary-color-light: #e6c652;
+    --secondary-color: #111111;
+}
+
 body {
     background-color: #111111 !important;
     color: white; /* optional, makes text visible */
+    overflow-x: hidden !important;
+    margin-left: 25px;
+}  a{
+    text-decoration: none !important;
+}  button {
+    margin: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    color: #f3c623;
+    border: 1px solid #f3c623;
+    font-weight: 700;
+    padding: 8px 20px !important;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* smooth animation */
+}  button:hover {
+    color: #111111;
+    background-color: #f3c623 !important;
 }
 
-a{
-    text-decoration: none !important;
-}
 
 /*custom*/
 .cursor {
@@ -25,6 +47,9 @@ a{
     min-height: 65px;   /* keep consistent height */
     line-height: 1.3;   /* control spacing between lines */
 }
+.cursor-pointer{
+    cursor: pointer;
+}
 
 /*text*/
 .yellow-text{
@@ -35,4 +60,19 @@ a{
 .bg-yellow{
     background-color: #e6bb1e;
 }
+.bg-yellow-light{
+    background-color: darkkhaki;
+}
+.bg-yellow-dark{
+    background-color: var(--primary-color-dark) !important;
+    color: white !important;
+}
 
+.sub-title{
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}

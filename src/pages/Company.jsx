@@ -2,7 +2,8 @@ import React, { memo } from "react";
 
 import "aos/dist/aos.css";
 import VisionMissionCarousel from "../component/VisionMissionCarousel";
-import PersonCardLandscape from "../component/PersonCardLandscape";
+import TeamSection from "../component/TeamSection";
+import { TEAM_MEMBERS } from "../data/db";
 
 const Home = () => {
   return (
@@ -114,13 +115,14 @@ const Home = () => {
                   <span className="yellow-text">Team</span> Members
                 </h2>
 
-                <PersonCardLandscape
-                  name={"Fredrick Armstrong"}
-                  description={
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!"
-                  }
-                  imageUrl={"images/person_1.jpg"}
-                />
+                <TeamSection list={TEAM_MEMBERS} />
+
+                <p className={"my-3"}>
+                  <a href="#" className="custom-btn">
+                    {/*TODO*/}
+                    See All Our Members
+                  </a>
+                </p>
               </div>
             </div>
           </div>
