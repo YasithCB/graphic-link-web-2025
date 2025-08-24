@@ -3,7 +3,7 @@ import "../assets/css/Sidebar.css";
 
 export default function Sidebar() {
   return (
-    <aside role="complementary">
+    <aside role="complementary" id="colorlib-aside" className="sidebar show d-none d-md-block">
       <Link to="/">
         <img src="/images/logo/logo-white.svg" height="100" alt="Graphic-link-logo" />
       </Link>

@@ -1,0 +1,19 @@
+.robot-3d {
+    position: absolute;
+    height: 150vh;
+    bottom: -40%;
+}
+/* Mobile view */
+@media (max-width: 768px) {
+    .robot-3d {
+        height: 10vh;   /* smaller height */
+        bottom: -50%;    /* adjust position */
+        left: -20%;         /* example - center in mobile */
+        right: 0;
+        margin: auto;
+    }
+}
+
+.main-text-container{
+    height: 100vh;
+}

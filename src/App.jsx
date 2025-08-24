@@ -7,11 +7,17 @@ import Company from "./pages/Company";
 import Sidebar from "./component/Sidebar";
 import "./assets/css/MiniSidebar.css";
 import ProjectSlider from "./component/ProjectSlider";
+import MiniSidebar from "./component/MiniSidebar";
 
 function Layout() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
 
   useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsSidebarVisible(false);
+      return;
+    } // skip for mobile
+
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight - 100) {
         setIsSidebarVisible(false);
@@ -27,26 +33,10 @@ function Layout() {
   return (
     <div className={`layout ${isSidebarVisible ? "with-sidebar" : "full-width"}`}>
       {/* Sidebar or Mini Navbar */}
-      {isSidebarVisible ? (
-        <aside id="colorlib-aside" className="sidebar show">
-          <Sidebar />
-        </aside>
-      ) : (
-        <aside className="mini-navbar">
-          <nav className="mini-nav-links">
-            <a href="#home">Home</a>
-            <a href="#">Company</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">News</a>
-            <a href="#">FAQ</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </aside>
-      )}
+      {isSidebarVisible ? <Sidebar /> : <MiniSidebar />}
 
       {/* Main content */}
-      <main className="main-content">
+      <main className="main-content portfolio-wrap">
         <section className="ftco-section p-0">
           <div>
             <Home />

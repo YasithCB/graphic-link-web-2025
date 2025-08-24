@@ -4,15 +4,18 @@
     --primary-color-light: #e6c652;
     --secondary-color: #111111;
 }
-
+body, html {
+    overflow-x: hidden !important;
+}
 body {
     background-color: #111111 !important;
     color: white; /* optional, makes text visible */
-    overflow-x: hidden !important;
     margin-left: 25px;
-}  a{
+}
+a{
     text-decoration: none !important;
-}  button {
+}
+button {
     margin: 15px;
     text-transform: uppercase;
     font-size: 12px;
@@ -26,6 +29,23 @@ body {
 }  button:hover {
     color: #111111;
     background-color: #f3c623 !important;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    body {
+        margin: 15px !important;
+    }
+    p{
+        font-size: 12px !important;
+    }
+    h2{
+        font-size: 22px !important;
+    }
+
+    .sub-title{
+        font-size: 11px !important;
+    }
 }
 
 
@@ -55,6 +75,14 @@ body {
 .yellow-text{
     color: #f3c623;
 }
+.sub-title{
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
 
 /*background -bg*/
 .bg-yellow{
@@ -68,11 +96,7 @@ body {
     color: white !important;
 }
 
-.sub-title{
-    display: block;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 3px;
-    color: rgba(255, 255, 255, 0.2);
-    font-weight: 600;
+/*font*/
+.fs-7{
+    font-size: 14px !important;
 }

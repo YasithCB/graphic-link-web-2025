@@ -57,14 +57,14 @@ export default function ProjectSlider() {
   }, []);
 
   return (
-    <>
+    <div className={"text-white"}>
       <div className={"text-center my-5"}>
         <span className="sub-title">See Our Projects</span>
         <h2 className="mb-4">
           <span className="yellow-text">Recent</span> Projects
         </h2>
       </div>
-      <div className="carousel mt-3">
+      <div className="carousel mt-3 ">
         <div className="list">
           {PROJECTS_DETAILS.map((project) => (
             <div className="item" key={project.id}>
@@ -115,6 +115,6 @@ export default function ProjectSlider() {
           <button id="next">&gt;</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

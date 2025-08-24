@@ -9,6 +9,13 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
+/* Mobile view */
+@media (max-width: 768px) {
+    .custom-btn {
+        padding: 5px 20px !important;
+        font-size: 10px !important;
+    }
+}
 
 /* Hover: scale + shadow */
 .custom-btn:hover {

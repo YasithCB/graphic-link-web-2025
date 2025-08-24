@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       {/*welcome to graphic link*/}
-      <div className="col-md-12 portfolio-wrap mt-3">
+      <div className="col-md-12 mt-3">
         <div className="row no-gutters align-items-center">
           <div
             className="col-md-6 order-md-last img d-flex align-items-center justify-content-center"
@@ -25,7 +25,7 @@ const Home = () => {
               <div className="px-4 px-lg-4">
                 <div className="desc text-md-right text-white">
                   <div className="top">
-                    <span className="subheading">Dream it. Print it.</span>
+                    <span className="sub-title">Dream it. Print it.</span>
                     <h2 className="mb-4">
                       <a href="#">
                         <span className="yellow-text">Welcome to</span> <br />
@@ -55,12 +55,12 @@ const Home = () => {
       </div>
 
       {/*about us*/}
-      <div className="col-md-12 portfolio-wrap mt-3">
+      <div className="col-md-12 mt-3">
         <div className="row no-gutters align-items-center">
           <div className="text pt-5 px-md-5">
             <div className="px-4 px-lg-4 text-white">
               <div className="desc text-center">
-                <span className="subheading">Who We Are</span>
+                <span className="sub-title">Who We Are</span>
 
                 <h2 className={"mb-5"}>
                   <span className="yellow-text">About</span> Graphic Link
@@ -85,12 +85,12 @@ const Home = () => {
       </div>
 
       {/*Vision and Mission*/}
-      <div className="col-md-12 portfolio-wrap mt-3">
+      <div className="col-md-12 mt-3">
         <div className="row no-gutters align-items-center">
           <div className="text pt-5 px-0">
-            <div className="ext-white">
+            <div className="text-white">
               <div className="desc text-center">
-                <span className="subheading">Shaping Tomorrow Together</span>
+                <span className="sub-title">Shaping Tomorrow Together</span>
 
                 <h2 className={"mb-3"}>
                   <span className="yellow-text">Vision</span> And Mission
@@ -104,12 +104,12 @@ const Home = () => {
       </div>
 
       {/*Team Members*/}
-      <div className="col-md-12 portfolio-wrap mt-3">
+      <div className="col-md-12 mt-3">
         <div className="row no-gutters align-items-center">
           <div className="text pt-5 px-0">
-            <div className="ext-white">
+            <div className="text-white">
               <div className="desc text-center">
-                <span className="subheading">Meet the Creative Minds Behind Our Work</span>
+                <span className="sub-title">Meet the Creative Minds Behind Our Work</span>
 
                 <h2 className={"mb-3"}>
                   <span className="yellow-text">Team</span> Members

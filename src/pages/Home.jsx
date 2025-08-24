@@ -54,11 +54,11 @@ const Home = () => {
   }, [handleTyping]);
 
   return (
-    <div className="col-md-12 portfolio-wrap">
+    <div className="col-md-12">
       <div className="row no-gutters align-items-center">
         {/* Left side background */}
         <div
-          className="col-md-6 img js-fullheight d-flex align-items-center justify-content-center"
+          className="d-none d-md-flex col-md-6 img js-fullheight align-items-center justify-content-center"
           style={{
             backgroundImage: `url(${work1})`,
             backgroundSize: "cover",
@@ -76,7 +76,7 @@ const Home = () => {
           />
 
           <div className="main-text-container pt-5 mt-1 text pl-0 px-lg-5 pl-md-4 text-white">
-            <div className="px-4 px-lg-4">
+            <div className="px-3 px-md-4">
               <div className="desc">
                 <div className="top">
                   <h4 className="mb-2 fixed-text">
@@ -86,7 +86,7 @@ const Home = () => {
                 </div>
 
                 <div className="absolute">
-                  <p>
+                  <p className={"fs-7"}>
                     Creative UAE-based graphics and advertising company delivering impactful
                     designs, branding, printing, and marketing solutions to help businesses stand
                     out.
