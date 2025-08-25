@@ -8996,7 +8996,7 @@ textarea.form-control {
   visibility: hidden; }
 
 .about-author {
-  background: #000000;
+  background: var(--dark-bg-color);
   width: 100%; }
   .about-author img {
     -webkit-border-radius: 50%;

@@ -1,17 +1,32 @@
-import "../assets/css/Sidebar.css";
+import "../assets/css/MiniSidebar.css";
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function MiniSidebar() {
   return (
     <aside className="mini-navbar d-none d-md-block">
       <nav className="mini-nav-links">
-        <a href="#home">Home</a>
-        <a href="#">Company</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">News</a>
-        <a href="#">FAQ</a>
-        <a href="#contact">Contact</a>
+        <Link to="company" smooth={true} duration={200}>
+          Company
+        </Link>
+        <Link to="services" smooth={true} duration={200}>
+          Services
+        </Link>
+        <Link to="projects" smooth={true} duration={200}>
+          Projects
+        </Link>
+        <Link to="news" smooth={true} duration={200}>
+          News
+        </Link>
+        <Link to="faq" smooth={true} duration={200}>
+          FAQ
+        </Link>
+        <Link to="contact" smooth={true} duration={200}>
+          Contact
+        </Link>
+        <Link to="home" smooth={true} duration={200}>
+          Home
+        </Link>
       </nav>
     </aside>
   );

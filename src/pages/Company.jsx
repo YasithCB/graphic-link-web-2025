@@ -2,12 +2,12 @@ import React, { memo } from "react";
 
 import "aos/dist/aos.css";
 import VisionMissionCarousel from "../component/VisionMissionCarousel";
-import TeamSection from "../component/TeamSection";
+import TeamSlider from "../component/TeamSlider";
 import { TEAM_MEMBERS } from "../data/db";
 
 const Home = () => {
   return (
-    <>
+    <div id={"company"}>
       {/*welcome to graphic link*/}
       <div className="col-md-12 mt-3">
         <div className="row no-gutters align-items-center">
@@ -104,7 +104,7 @@ const Home = () => {
       </div>
 
       {/*Team Members*/}
-      <div className="col-md-12 mt-3">
+      <div className="col-md-12 mt-3 bg-dark-50">
         <div className="row no-gutters align-items-center">
           <div className="text pt-5 px-0">
             <div className="text-white">
@@ -115,7 +115,7 @@ const Home = () => {
                   <span className="yellow-text">Team</span> Members
                 </h2>
 
-                <TeamSection list={TEAM_MEMBERS} />
+                <TeamSlider list={TEAM_MEMBERS} />
 
                 <p className={"my-3"}>
                   <a href="#" className="custom-btn">
@@ -128,7 +128,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

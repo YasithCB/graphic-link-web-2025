@@ -6,8 +6,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Company from "./pages/Company";
 import Sidebar from "./component/Sidebar";
 import "./assets/css/MiniSidebar.css";
-import ProjectSlider from "./component/ProjectSlider";
 import MiniSidebar from "./component/MiniSidebar";
+import Projects from "./pages/Projects";
+import Services from "./pages/Services";
 
 function Layout() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
@@ -41,7 +42,8 @@ function Layout() {
           <div>
             <Home />
             <Company />
-            <ProjectSlider />
+            <Services />
+            <Projects />
           </div>
         </section>
       </main>

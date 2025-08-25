@@ -3,7 +3,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import PersonCardLandscape from "./PersonCardLandscape";
 
-export default function TeamSection({ list }) {
+export default function TeamSlider({ list }) {
   const [startIndex, setStartIndex] = React.useState(0);
 
   // Show 2 cards at a time
@@ -17,7 +17,7 @@ export default function TeamSection({ list }) {
   }, [list.length]);
 
   return (
-    <div className="overflow-hidden w-full bg-black">
+    <div className="overflow-hidden w-full bg-dark-50">
       <AnimatePresence mode="popLayout">
         <motion.div
           key={startIndex}

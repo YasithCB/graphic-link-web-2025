@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "../assets/css/Sidebar.css";
 
 export default function Sidebar() {
@@ -11,25 +11,39 @@ export default function Sidebar() {
       <nav id="colorlib-main-menu" role="navigation" className="mt-4">
         <ul>
           <li className="colorlib-active">
-            <Link to="/">Home</Link>
+            <Link to="home" smooth={true} duration={200}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/company">Company</Link>
+            <Link to="company" smooth={true} duration={200}>
+              Company
+            </Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="services" smooth={true} duration={200}>
+              Services
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="projects" smooth={true} duration={200}>
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <Link to="news" smooth={true} duration={200}>
+              News
+            </Link>
           </li>
           <li>
-            <Link to="/FAQ">FAQ</Link>
+            <Link to="faq" smooth={true} duration={200}>
+              FAQ
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="contact" smooth={true} duration={200}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

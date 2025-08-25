@@ -1,8 +1,9 @@
 :root {
     --primary-color: #f3c623; /* default yellow */
-    --primary-color-dark: #bc9717;
+    --primary-color-dark: #c69f19;
     --primary-color-light: #e6c652;
     --secondary-color: #111111;
+    --dark-bg-color: rgba(33, 33, 33, 0.71);
 }
 body, html {
     overflow-x: hidden !important;
@@ -12,8 +13,9 @@ body {
     color: white; /* optional, makes text visible */
     margin-left: 25px;
 }
-a{
+a, Link{
     text-decoration: none !important;
+    cursor: pointer;
 }
 button {
     margin: 15px;
@@ -94,6 +96,9 @@ button {
 .bg-yellow-dark{
     background-color: var(--primary-color-dark) !important;
     color: white !important;
+}
+.bg-dark-50 {
+    background-color: var(--dark-bg-color) !important;
 }
 
 /*font*/

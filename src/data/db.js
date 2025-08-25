@@ -151,3 +151,72 @@ export const PROJECTS_DETAILS = [
     ],
   },
 ];
+
+// servicesData.js
+import product1 from "/public/images/services/1.png"; // replace with your actual images
+import product2 from "/public/images/services/2.png"; // replace with your actual images
+import product3 from "/public/images/services/3.png"; // replace with your actual images
+import product4 from "/public/images/services/4.png"; // replace with your actual images
+
+export const SERVICES = [
+  {
+    title: "3D SIGNAGES",
+    desc: "3D Acrylic Signs, Stainless Steel Signs, 3D Wooden Signs",
+    img: product1,
+  },
+  {
+    title: "VEHICLE GRAPHICS",
+    desc: "Vehicle Branding, Truck Branding, Delivery Bike Branding",
+    img: product2,
+  },
+  {
+    title: "BANNER PRINTING",
+    desc: "Billboard, Hoarding, Streamers, Flex Backdrop",
+    img: product3,
+  },
+  {
+    title: "INDOOR SIGNS",
+    desc: "Office Name Plates, Direction Signs, Hanging Signs",
+    img: product4,
+  },
+  {
+    title: "SCREEN PRINTING",
+    desc: "Lanyard printing, Cup Printing, Printing on T-shirts",
+    img: product2,
+  },
+  {
+    title: "WE OFFER DESIGN SERVICES",
+    desc: "Logo Design, Corporate Identity Design, Company Profile",
+    img: product3,
+  },
+  {
+    title: "EXHIBITION STANDS",
+    desc: "Rollup Stands, Popup Stands, Display Stands",
+    img: product4,
+  },
+  {
+    title: "T-SHIRT PRINTING",
+    desc: "Screen Printing, Heat Transfer, Embroidery",
+    img: product1,
+  },
+  {
+    title: "PROMOTIONAL ITEMS",
+    desc: "Plastic card, Pen Printing, Lanyard, Printing on Balloons",
+    img: product3,
+  },
+  {
+    title: "OUTDOOR SIGNS",
+    desc: "Shop Signage, Hoarding, Banners, 3D Signs, Pole Sign",
+    img: product4,
+  },
+  {
+    title: "PROMOTIONAL GIFT ITEMS",
+    desc: "T-shirts, Pen, Key Chain, Gift Cards, Mug Printing",
+    img: product2,
+  },
+  {
+    title: "WE OFFER PRINTING SERVICES",
+    desc: "Flyer, Brochure, Business Card, Box Printing, Paper Bags",
+    img: product3,
+  },
+];

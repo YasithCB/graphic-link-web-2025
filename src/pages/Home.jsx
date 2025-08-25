@@ -54,7 +54,7 @@ const Home = () => {
   }, [handleTyping]);
 
   return (
-    <div className="col-md-12">
+    <div id={"home"} className="col-md-12">
       <div className="row no-gutters align-items-center">
         {/* Left side background */}
         <div
