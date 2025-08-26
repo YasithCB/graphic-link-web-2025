@@ -1,7 +1,8 @@
 .robot-3d {
     position: absolute;
-    height: 150vh;
-    bottom: -40%;
+    height: 120vh !important;
+    bottom: -50vh !important;
+    right: 8vh !important;
 }
 /* Mobile view */
 @media (max-width: 768px) {
@@ -12,6 +13,30 @@
         right: 0;
         margin: auto;
     }
+}
+
+.open-profile-btn {
+    position: absolute;
+    height: 100px;
+    right: 0;
+    z-index: 10;   /* 👈 ensures it's on top */
+}
+
+.open-profile-btn:hover {
+    cursor: pointer;
+}
+
+.main-img{
+    background-image: url('public/images/home/main-img-2.svg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 40vw !important;
+    position: relative;
+}
+.main-title-col {
+    position: relative;
+    width: 40vw !important;
 }
 
 .main-text-container{

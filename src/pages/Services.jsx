@@ -8,7 +8,7 @@ export default function Services() {
     <div className="container service-section mt-5">
       <div className="row">
         {/* Static Left Column */}
-        <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 flex justify-content-between">
+        <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 flex justify-content-between text-white">
           <h2 className="mb-4 section-title">
             <span className="yellow-text">Explore</span> Our Wide Service Range
           </h2>

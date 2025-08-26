@@ -1,13 +1,10 @@
 import React, { useState, useEffect, useCallback, memo } from "react";
 import Spline from "@splinetool/react-spline";
 import AOS from "aos";
-import "aos/dist/aos.css";
-
-// Import image correctly (Vite will handle it)
-import work1 from "/images/work-1.jpg";
+import "../assets/css/main.css";
 
 // Constants
-const TYPING_SPEED = 40;
+const TYPING_SPEED = 110;
 const ERASING_SPEED = 30;
 const PAUSE_DURATION = 1000;
 const WORDS = ["We Design. We Print. We Advertise.", "Your Brand, Our Creativity."];
@@ -57,25 +54,23 @@ const Home = () => {
     <div id={"home"} className="col-md-12">
       <div className="row no-gutters align-items-center">
         {/* Left side background */}
-        <div
-          className="d-none d-md-flex col-md-6 img js-fullheight align-items-center justify-content-center"
-          style={{
-            backgroundImage: `url(${work1})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "100vh",
-          }}
-        ></div>
-
+        <div className="main-img d-none d-md-flex img js-fullheight align-items-center justify-content-center">
+          <img
+            src="/public/images/home/open-profile-btn.svg"
+            alt="Open PDF"
+            className="open-profile-btn"
+            onClick={() => window.open("/pdf-viewer.html", "_blank")}
+          />
+        </div>
         {/* Right side content */}
-        <div className="col-md-6">
+        <div className="main-title-col col-md-5 col-xxl-3">
           {/* 3D Robot */}
           <Spline
             className={"robot-3d"}
             scene="https://prod.spline.design/U9T-eKQSg7iiS1iZ/scene.splinecode"
           />
 
-          <div className="main-text-container pt-5 mt-1 text pl-0 px-lg-5 pl-md-4 text-white">
+          <div className="main-text-container pt-5 mt-1 text pl-0 px-lg-3 pl-md-3 text-white">
             <div className="px-3 px-md-4">
               <div className="desc">
                 <div className="top">
@@ -86,7 +81,7 @@ const Home = () => {
                 </div>
 
                 <div className="absolute">
-                  <p className={"fs-7"}>
+                  <p className={"fs-7 me-3"}>
                     Creative UAE-based graphics and advertising company delivering impactful
                     designs, branding, printing, and marketing solutions to help businesses stand
                     out.

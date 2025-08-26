@@ -93,7 +93,7 @@ const Home = () => {
                 <span className="sub-title">Shaping Tomorrow Together</span>
 
                 <h2 className={"mb-3"}>
-                  <span className="yellow-text">Vision</span> And Mission
+                  <span className="yellow-text">Mission</span> And Vision
                 </h2>
 
                 <VisionMissionCarousel />

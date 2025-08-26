@@ -5,7 +5,7 @@
 
 .with-sidebar .main-content {
     flex: 1;
-    margin-left: 280px; /* width of sidebar */
+    margin-left: 18vw; /* width of sidebar */
     transition: margin-left 0.3s ease;
 }
 
@@ -16,8 +16,10 @@
 }
 
 .sidebar {
-    width: 280px;
-    background: #111;
+    background-image: url("public/images/home/sidebar-bg.jpg") !important;
+    background-size: contain;
+    background-position: center;
+    width: 20vw !important;
     min-height: 100vh;
     position: fixed;
     left: 0;

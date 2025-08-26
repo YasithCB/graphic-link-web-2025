@@ -31,11 +31,6 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="news" smooth={true} duration={200}>
-              News
-            </Link>
-          </li>
-          <li>
             <Link to="faq" smooth={true} duration={200}>
               FAQ
             </Link>
