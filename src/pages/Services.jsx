@@ -1,17 +1,18 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "../assets/css/Services.css";
 import { SERVICES } from "../data/db";
 
 export default function Services() {
   return (
-    <div className="container service-section">
+    <div className="container service-section mt-5">
       <div className="row">
         {/* Static Left Column */}
-        <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 flex-column justify-content-center">
+        <div className="col-md-12 col-lg-3 mb-5 mb-lg-0 flex justify-content-between">
           <h2 className="mb-4 section-title">
             <span className="yellow-text">Explore</span> Our Wide Service Range
           </h2>
-          <p className="mb-4">
+          <p>
             Our expert team in Abu Dhabi specializes in high-quality signage solutions, including
             commercial, indoor, outdoor, industrial, shop, and digital signage. We take a unique
             approach to deliver creative results our clients love.
@@ -34,12 +35,7 @@ export default function Services() {
             {SERVICES.map((service, index) => (
               <SwiperSlide key={index}>
                 <div className="service-item text-white text-center">
-                  <img
-                    src={service.img}
-                    height={100}
-                    className="img-fluid product-thumbnail"
-                    alt={service.title}
-                  />
+                  <img src={service.img} className="service-thumbnail" alt={service.title} />
                   <div>
                     <h6>{service.title}</h6>
                     <p className="fs-7 text-secondary">{service.desc}</p>

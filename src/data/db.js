@@ -153,10 +153,10 @@ export const PROJECTS_DETAILS = [
 ];
 
 // servicesData.js
-import product1 from "/public/images/services/1.png"; // replace with your actual images
-import product2 from "/public/images/services/2.png"; // replace with your actual images
-import product3 from "/public/images/services/3.png"; // replace with your actual images
-import product4 from "/public/images/services/4.png"; // replace with your actual images
+import product1 from "/images/services/1.png"; // replace with your actual images
+import product2 from "/images/services/2.png"; // replace with your actual images
+import product3 from "/images/services/3.png"; // replace with your actual images
+import product4 from "/images/services/4.png"; // replace with your actual images
 
 export const SERVICES = [
   {

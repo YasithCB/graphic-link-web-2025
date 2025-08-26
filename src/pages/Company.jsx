@@ -104,7 +104,7 @@ const Home = () => {
       </div>
 
       {/*Team Members*/}
-      <div className="col-md-12 mt-3 bg-dark-50">
+      <div className="col-md-12 mt-3 pb-3 bg-dark-50">
         <div className="row no-gutters align-items-center">
           <div className="text pt-5 px-0">
             <div className="text-white">
