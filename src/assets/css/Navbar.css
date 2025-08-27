@@ -3,6 +3,33 @@
     position: fixed !important;
     width: 100vw;
 }
+/* Active Nav Item */
+.active-nav-item {
+    position: relative;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+/* Add a custom underline */
+.active-nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* adjust underline distance */
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for better UX */
+.menu li a:hover::after {
+    transform: scaleX(1);
+}
+
 
 /* src/components/my-navbar.css */
 :root{
@@ -21,7 +48,7 @@
 }
 
 .my-navbar .container-fluid{
-    max-width: 1400px; margin: 0 auto;
+    max-width: fit-content; margin: 0 auto;
     padding: 0 24px; height: 78px;
     display: flex; align-items: center; justify-content: space-between;
 }

@@ -10,7 +10,7 @@ export default function OurClients() {
           {/* Heading */}
           <div className="col-12 col-md-4 text-center section-header d-flex flex-column justify-content-center">
             <span className="sub-title">Best Experience</span>
-            <h2>
+            <h2 className="text-white">
               <span className="yellow-text">Our </span>Clients
             </h2>
             <p className="text-white">

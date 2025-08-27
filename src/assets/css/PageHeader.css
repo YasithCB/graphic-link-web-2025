@@ -1,0 +1,49 @@
+.pages-header {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 100px;
+    color: #fff;
+}
+
+.pages-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5) !important; /* dark overlay */
+    z-index: 1;
+}
+
+.pages-header .cont {
+    position: relative;
+    z-index: 2;
+}
+
+.pages-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pages-header .path {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.pages-header .path a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pages-header .path a:hover {
+    color: #ffcc00; /* highlight color */
+}
+
+.pages-header .current {
+    font-weight: 600;
+}

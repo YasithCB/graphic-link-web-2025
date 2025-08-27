@@ -113,3 +113,17 @@ button {
 .fs-7{
     font-size: 14px !important;
 }
+
+/*logo-fixed*/
+.logo-fixed {
+    position: fixed;
+    top: 100px;     /* distance from top */
+    left: 30px;    /* distance from left */
+    z-index: 9; /* keeps it above other elements */
+}
+
+.logo-fixed img {
+    width: 5vw;  /* adjust size */
+    height: auto;  /* keep aspect ratio */
+}
+/*logo-fixed*/

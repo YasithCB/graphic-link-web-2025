@@ -111,9 +111,8 @@ export default function ServiceGallery() {
                   <img src={item.img} alt={item.title} loading="lazy" />
                 </div>
                 <div className="cont">
-                  <div className="title">{item.title}</div>
+                  <h5 className="">{item.title}</h5>
                 </div>
-                <a className="link" href="#"></a>
               </div>
             </div>
           ))}

@@ -17,7 +17,7 @@ export default function TeamSlider({ list }) {
   }, [list.length]);
 
   return (
-    <div className="overflow-hidden w-full bg-dark-50">
+    <div className="overflow-hidden w-full">
       <AnimatePresence mode="popLayout">
         <motion.div
           key={startIndex}

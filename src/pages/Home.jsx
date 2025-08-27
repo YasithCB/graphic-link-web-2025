@@ -3,6 +3,7 @@ import "../assets/css/Home.css";
 import ServiceCategorySlider from "../component/ServiceCategorySlider";
 import ServiceGallery from "../component/ServiceGallery";
 import OurClients from "../component/OurClients";
+import OurMembers from "../component/OurMembers";
 
 const Home = () => {
   const [bottomBg, setBottomBg] = useState(-1);
@@ -25,6 +26,10 @@ const Home = () => {
 
       <section className="empty-bg-section"></section>
       <section className="bottom-img-bg" style={{ zIndex: bottomBg }}></section>
+
+      <div className="position-relative main-content">
+        <OurMembers />
+      </div>
     </div>
   );
 };

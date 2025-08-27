@@ -1,46 +1,52 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaSearch, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { FaFacebook, FaTwitter, FaInstagram, FaTimes } from "react-icons/fa";
 
 import "../assets/css/Navbar.css";
 
 export default function Navbar() {
   const [isMobileOpen, setMobileOpen] = useState(false);
 
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "active-nav-item" // active link style
+      : "hover:text-blue-400"; // normal hover style
+
   return (
     <nav className="my-navbar">
       <div className="container-fluid flex items-center justify-between py-3">
-        {/* Logo */}
-        <div className="logo">
-          <Link to="/">
-            <img
-              src="/images/logo/logo-white.svg"
-              alt="Logo White"
-              className="block dark:hidden h-12"
-            />
-          </Link>
-        </div>
-
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="menu flex gap-6 font-medium">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/" className={linkClass}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <NavLink to="/about" className={linkClass}>
+                About
+              </NavLink>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <NavLink to="/services" className={linkClass}>
+                Services
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <NavLink to="/projects" className={linkClass}>
+                Projects
+              </NavLink>
             </li>
             <li>
-              <a href="/careers">Careers</a>
+              <NavLink to="/careers" className={linkClass}>
+                Careers
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink to="/contact" className={linkClass}>
+                Contact
+              </NavLink>
             </li>
           </ul>
 
@@ -78,34 +84,34 @@ export default function Navbar() {
           </button>
           <ul className="flex flex-col gap-6">
             <li>
-              <Link to="/" onClick={() => setMobileOpen(false)}>
+              <NavLink to="/" className={linkClass} onClick={() => setMobileOpen(false)}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" onClick={() => setMobileOpen(false)}>
+              <NavLink to="/about" className={linkClass} onClick={() => setMobileOpen(false)}>
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/services" onClick={() => setMobileOpen(false)}>
+              <NavLink to="/services" className={linkClass} onClick={() => setMobileOpen(false)}>
                 Services
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" onClick={() => setMobileOpen(false)}>
+              <NavLink to="/projects" className={linkClass} onClick={() => setMobileOpen(false)}>
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/careers" onClick={() => setMobileOpen(false)}>
+              <NavLink to="/careers" className={linkClass} onClick={() => setMobileOpen(false)}>
                 Careers
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setMobileOpen(false)}>
+              <NavLink to="/contact" className={linkClass} onClick={() => setMobileOpen(false)}>
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
