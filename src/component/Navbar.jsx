@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaTimes } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaTimes, FaTiktok } from "react-icons/fa";
 
 import "../assets/css/Navbar.css";
 
@@ -53,13 +53,16 @@ export default function Navbar() {
           {/* Social Icons */}
           <ul className="icons flex gap-4 text-lg">
             <li>
-              <a href="#">
-                <FaFacebook />
+              <a
+                href="https://www.tiktok.com/@graphic_link_?_t=ZS-8ytyCkL0qEz&_r=1"
+                target="_blank"
+              >
+                <FaTiktok />
               </a>
             </li>
             <li>
               <a href="#">
-                <FaTwitter />
+                <FaFacebook />
               </a>
             </li>
             <li>
