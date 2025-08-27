@@ -3,8 +3,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/css/MiniSidebar.css";
-import Projects from "./pages/Projects";
-import Services from "./pages/Services";
 import HeroSlider from "./component/HeroSlider";
 import Navbar from "./component/Navbar";
 import Home from "./pages/Home";

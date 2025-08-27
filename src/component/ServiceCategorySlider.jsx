@@ -33,10 +33,10 @@ const imageData = [
 ];
 
 export default function ServiceCategorySlider() {
-  const [currentIndex, setCurrentIndex] = useState(3);
   const [isPlaying, setIsPlaying] = useState(true);
   const autoplayRef = useRef(null);
   const containerRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(3);
 
   // Handle autoplay
   useEffect(() => {
@@ -47,17 +47,6 @@ export default function ServiceCategorySlider() {
     }
     return () => clearInterval(autoplayRef.current);
   }, [isPlaying]);
-
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKey = (e) => {
-      if (e.key === "ArrowLeft") navigate(-1);
-      if (e.key === "ArrowRight") navigate(1);
-    };
-    const container = containerRef.current;
-    container?.addEventListener("keydown", handleKey);
-    return () => container?.removeEventListener("keydown", handleKey);
-  }, []);
 
   const navigate = (dir) => {
     setCurrentIndex((prev) => {
@@ -86,7 +75,7 @@ export default function ServiceCategorySlider() {
           </h2>
         </div>
 
-        <div className="info col-12 col-md-3 text-left">
+        <div className="info col-12 col-md-3 text-right">
           <h2>{imageData[currentIndex].title}</h2>
           <p>{imageData[currentIndex].description}</p>
         </div>

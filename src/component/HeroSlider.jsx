@@ -37,12 +37,11 @@ export default function HeroSlider() {
   return (
     <div className="hero-wrapper">
       <Swiper
-        modules={[Autoplay, Pagination, Parallax]}
+        modules={[Autoplay, Pagination]}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         loop={true}
         speed={1000}
-        parallax={true}
         className="hero-swiper"
       >
         {slides.map((slide, index) => (
