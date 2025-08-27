@@ -157,49 +157,49 @@ export const MAIN_SERVICES = [
     title: "Indoor Signs",
     description:
       "Custom-designed indoor signs that enhance brand visibility in offices, retail stores, and events with premium finishes.",
-    src: "images/services/mountain-landscape.jpg",
+    src: "/images/services/main-services-icons/Signage.svg",
   },
   {
     title: "Outdoor Signs",
     description:
       "Durable and weather-resistant outdoor signage solutions built to attract attention and withstand harsh conditions.",
-    src: "images/services/forest-path.jpg",
+    src: "/images/services/main-services-icons/Signage.svg",
   },
   {
     title: "Vehicle Graphics",
     description:
       "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
-    src: "images/services/serene-water-mirroring.jpg",
+    src: "/images/services/main-services-icons/Vehicle.svg",
   },
   {
     title: "Exhibition Stands",
     description:
       "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
-    src: "images/services/ocean-sunset-golden-hour.jpg",
+    src: "/images/services/main-services-icons/Signage.svg",
   },
   {
     title: "Laser Cutting / CNC Work",
     description:
       "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
-    src: "images/services/rolling-sand-dunes.jpg",
+    src: "/images/services/main-services-icons/CNC.svg",
   },
   {
     title: "Large Printing",
     description:
       "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
-    src: "https://i.pinimg.com/1200x/ef/31/93/ef31939a6adf53bc6c0ab2b9e47144f1.jpg",
+    src: "/images/services/main-services-icons/large.svg",
   },
   {
     title: "Signage Work",
     description:
       "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
-    src: "https://i.pinimg.com/1200x/ef/31/93/ef31939a6adf53bc6c0ab2b9e47144f1.jpg",
+    src: "/images/services/main-services-icons/Signage.svg",
   },
   {
     title: "LED Screen",
     description:
       "Dynamic LED screen displays for advertising, events, and promotions, ensuring maximum audience engagement.",
-    src: "https://i.pinimg.com/1200x/ef/31/93/ef31939a6adf53bc6c0ab2b9e47144f1.jpg",
+    src: "/images/services/main-services-icons/LED.svg",
   },
 ];
 
