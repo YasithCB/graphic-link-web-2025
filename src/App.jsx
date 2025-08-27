@@ -1,49 +1,26 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useEffect, useState } from "react";
-import Home from "./Pages/Home";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import Company from "./pages/Company";
-import Sidebar from "./component/Sidebar";
 import "./assets/css/MiniSidebar.css";
-import MiniSidebar from "./component/MiniSidebar";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
+import HeroSlider from "./component/HeroSlider";
+import Navbar from "./component/Navbar";
+import Home from "./pages/Home";
+import Footer from "./component/Footer";
 
 function Layout() {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
-
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      setIsSidebarVisible(false);
-      return;
-    } // skip for mobile
-
-    const handleScroll = () => {
-      if (window.scrollY > window.innerHeight - 100) {
-        setIsSidebarVisible(false);
-      } else {
-        setIsSidebarVisible(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div className={`layout ${isSidebarVisible ? "with-sidebar" : "full-width"}`}>
-      {/* Sidebar or Mini Navbar */}
-      {isSidebarVisible ? <Sidebar /> : <MiniSidebar />}
-
+    <div>
       {/* Main content */}
-      <main className="main-content portfolio-wrap">
+      <main className="portfolio-wrap">
         <section className="ftco-section p-0">
           <div>
+            <Navbar />
+            <HeroSlider />
             <Home />
-            <Company />
-            <Services />
-            <Projects />
+            <Footer />
           </div>
         </section>
       </main>

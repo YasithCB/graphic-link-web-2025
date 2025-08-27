@@ -1,0 +1,28 @@
+.home {
+    margin-top: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.main-content {
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+            url("/images/home/main-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*empty bg*/
+.empty-bg-section {
+    position: relative;
+    height: 50vh; /* height of empty section */
+    overflow: hidden;
+}
+.bottom-img-bg{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("public/images/home/bottom-bg-offset-printer.jpg");
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+/*empty bg*/

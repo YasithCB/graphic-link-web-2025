@@ -27,7 +27,7 @@
 }
 
 .main-img{
-    background-image: url('public/images/home/main-img-2.svg');
+    background-image: url('/images/home/main-img-2.svg');
     background-size: cover;
     background-position: bottom;
     height: 100vh;

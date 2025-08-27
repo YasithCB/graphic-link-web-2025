@@ -11,7 +11,14 @@ body, html {
 body {
     background-color: #111111 !important;
     color: white; /* optional, makes text visible */
-    margin-left: 25px;
+}
+/* Hide scrollbar : For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    display: none;
+}
+/* For Firefox */
+html {
+    scrollbar-width: none; /* hides scrollbar */
 }
 a, Link{
     text-decoration: none !important;
@@ -33,15 +40,6 @@ button {
     background-color: #f3c623 !important;
 }
 
-.main-content {
-    background:
-            linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.6)),
-            url("/images/home/main-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 /* Mobile view */
 @media (max-width: 768px) {
@@ -56,7 +54,7 @@ button {
     }
 
     .sub-title{
-        font-size: 11px !important;
+        font-size: 0.7rem !important;
     }
 }
 
@@ -90,7 +88,7 @@ button {
 .sub-title{
     display: block;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 1rem;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 0.2);
     font-weight: 600;

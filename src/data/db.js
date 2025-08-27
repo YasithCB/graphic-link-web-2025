@@ -220,3 +220,55 @@ export const SERVICES = [
     img: product3,
   },
 ];
+
+export const CLIENTS = [
+  {
+    name: "Obelisk",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    link: "#",
+  },
+  {
+    name: "Client 2",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    link: "#",
+  },
+  {
+    name: "Obelisk",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    link: "#",
+  },
+  {
+    name: "Client 2",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    link: "#",
+  },
+  {
+    name: "Obelisk",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    link: "#",
+  },
+  {
+    name: "Client 2",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    link: "#",
+  },
+  {
+    name: "Obelisk",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
+    link: "#",
+  },
+  {
+    name: "Client 2",
+    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
+    link: "#",
+  },
+  // add more clients...
+];

@@ -1,13 +1,43 @@
 import React, { memo } from "react";
 
-import "aos/dist/aos.css";
+import "../assets/css/Home.css";
 import VisionMissionCarousel from "../component/VisionMissionCarousel";
 import TeamSlider from "../component/TeamSlider";
 import { TEAM_MEMBERS } from "../data/db";
 
-const Home = () => {
+const Company = () => {
   return (
-    <div id={"company"}>
+    <div id="company">
+      {/*about us*/}
+      <div className="col-md-12 mt-3">
+        <div className="row no-gutters align-items-center">
+          <div className="text pt-5 px-md-5">
+            <div className="px-4 px-lg-4 text-white">
+              <div className="desc text-center">
+                <span className="sub-title">Who We Are</span>
+
+                <h2 className={"mb-5"}>
+                  <span className="yellow-text">About</span> Graphic Link
+                </h2>
+
+                <p>
+                  Welcome to Graphic Links, your ultimate partner in standout 3D Signage,Polysign,
+                  and Acrylic Signage solutions. Based in Abu Dhabi, We specialize in creating
+                  visually striking and impactful signs that help your brand rise above the
+                  cluttered digital landscape
+                </p>
+                <p>
+                  <a href="#" className="custom-btn">
+                    {/*TODO*/}
+                    Download Our Profile Now
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/*welcome to graphic link*/}
       <div className="col-md-12 mt-3">
         <div className="row no-gutters align-items-center">
@@ -48,36 +78,6 @@ const Home = () => {
                     </a>
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/*about us*/}
-      <div className="col-md-12 mt-3">
-        <div className="row no-gutters align-items-center">
-          <div className="text pt-5 px-md-5">
-            <div className="px-4 px-lg-4 text-white">
-              <div className="desc text-center">
-                <span className="sub-title">Who We Are</span>
-
-                <h2 className={"mb-5"}>
-                  <span className="yellow-text">About</span> Graphic Link
-                </h2>
-
-                <p>
-                  Welcome to Graphic Links, your ultimate partner in standout 3D Signage,Polysign,
-                  and Acrylic Signage solutions. Based in Abu Dhabi, We specialize in creating
-                  visually striking and impactful signs that help your brand rise above the
-                  cluttered digital landscape
-                </p>
-                <p>
-                  <a href="#" className="custom-btn">
-                    {/*TODO*/}
-                    Download Our Profile Now
-                  </a>
-                </p>
               </div>
             </div>
           </div>
@@ -132,4 +132,4 @@ const Home = () => {
   );
 };
 
-export default memo(Home);
+export default memo(Company);
