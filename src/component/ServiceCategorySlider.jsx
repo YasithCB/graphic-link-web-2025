@@ -1,36 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../assets/css/ServiceCategorySlider.css";
-
-const imageData = [
-  {
-    title: "Offset Printing",
-    description:
-      "High-quality large volume printing for brochures, catalogs, and packaging materials.",
-    src: "images/services/mountain-landscape.jpg",
-  },
-  {
-    title: "Digital Printing",
-    description:
-      "Fast, affordable, and customizable prints for flyers, business cards, and posters.",
-    src: "images/services/forest-path.jpg",
-  },
-  {
-    title: "Events & Exhibition",
-    description:
-      "Creative displays, backdrops, and exhibition materials that captivate your audience.",
-    src: "images/services/serene-water-mirroring.jpg",
-  },
-  {
-    title: "Sign Boards",
-    description: "Durable indoor and outdoor signage to highlight your brand effectively.",
-    src: "images/services/ocean-sunset-golden-hour.jpg",
-  },
-  {
-    title: "Gift Items",
-    description: "Personalized corporate and promotional gifts to leave a lasting impression.",
-    src: "images/services/rolling-sand-dunes.jpg",
-  },
-];
+import { MAIN_SERVICES } from "../data/db";
 
 export default function ServiceCategorySlider() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -42,7 +12,7 @@ export default function ServiceCategorySlider() {
   useEffect(() => {
     if (isPlaying) {
       autoplayRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % imageData.length);
+        setCurrentIndex((prev) => (prev + 1) % MAIN_SERVICES.length);
       }, 4000);
     }
     return () => clearInterval(autoplayRef.current);
@@ -51,8 +21,8 @@ export default function ServiceCategorySlider() {
   const navigate = (dir) => {
     setCurrentIndex((prev) => {
       let next = prev + dir;
-      if (next < 0) return imageData.length - 1;
-      if (next >= imageData.length) return 0;
+      if (next < 0) return MAIN_SERVICES.length - 1;
+      if (next >= MAIN_SERVICES.length) return 0;
       return next;
     });
     stopAutoplay();
@@ -76,16 +46,16 @@ export default function ServiceCategorySlider() {
         </div>
 
         <div className="info col-12 col-md-3 text-right">
-          <h2>{imageData[currentIndex].title}</h2>
-          <p>{imageData[currentIndex].description}</p>
+          <h2>{MAIN_SERVICES[currentIndex].title}</h2>
+          <p>{MAIN_SERVICES[currentIndex].description}</p>
         </div>
 
         <div className="coverflow-container col-12 col-md-9" tabIndex={0} ref={containerRef}>
           <div className="coverflow">
-            {imageData.map((img, index) => {
+            {MAIN_SERVICES.map((img, index) => {
               let offset = index - currentIndex;
-              if (offset > imageData.length / 2) offset -= imageData.length;
-              if (offset < -imageData.length / 2) offset += imageData.length;
+              if (offset > MAIN_SERVICES.length / 2) offset -= MAIN_SERVICES.length;
+              if (offset < -MAIN_SERVICES.length / 2) offset += MAIN_SERVICES.length;
 
               const abs = Math.abs(offset);
               const sign = Math.sign(offset);
@@ -131,7 +101,7 @@ export default function ServiceCategorySlider() {
           </button>
 
           <div className="dots-container">
-            {imageData.map((_, index) => (
+            {MAIN_SERVICES.map((_, index) => (
               <div
                 key={index}
                 className={`dot ${index === currentIndex ? "active" : ""}`}

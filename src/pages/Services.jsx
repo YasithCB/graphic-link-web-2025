@@ -1,7 +1,5 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "../assets/css/Services.css";
-import { SERVICES } from "../data/db";
 import PageHeader from "../component/PageHeader";
 import React from "react";
 import ServiceCategorySlider from "../component/ServiceCategorySlider";

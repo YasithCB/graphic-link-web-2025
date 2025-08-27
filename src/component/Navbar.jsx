@@ -66,7 +66,10 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/graphic_link1?igsh=bnVzNHV6ZmhkcmQ0"
+                target={"_blank"}
+              >
                 <FaInstagram />
               </a>
             </li>

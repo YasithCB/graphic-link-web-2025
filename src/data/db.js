@@ -152,72 +152,54 @@ export const PROJECTS_DETAILS = [
   },
 ];
 
-// servicesData.js
-import product1 from "/images/services/1.png"; // replace with your actual images
-import product2 from "/images/services/2.png"; // replace with your actual images
-import product3 from "/images/services/3.png"; // replace with your actual images
-import product4 from "/images/services/4.png"; // replace with your actual images
-
-export const SERVICES = [
+export const MAIN_SERVICES = [
   {
-    title: "3D SIGNAGES",
-    desc: "3D Acrylic Signs, Stainless Steel Signs, 3D Wooden Signs",
-    img: product1,
+    title: "Indoor Signs",
+    description:
+      "Custom-designed indoor signs that enhance brand visibility in offices, retail stores, and events with premium finishes.",
+    src: "images/services/mountain-landscape.jpg",
   },
   {
-    title: "VEHICLE GRAPHICS",
-    desc: "Vehicle Branding, Truck Branding, Delivery Bike Branding",
-    img: product2,
+    title: "Outdoor Signs",
+    description:
+      "Durable and weather-resistant outdoor signage solutions built to attract attention and withstand harsh conditions.",
+    src: "images/services/forest-path.jpg",
   },
   {
-    title: "BANNER PRINTING",
-    desc: "Billboard, Hoarding, Streamers, Flex Backdrop",
-    img: product3,
+    title: "Vehicle Graphics",
+    description:
+      "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
+    src: "images/services/serene-water-mirroring.jpg",
   },
   {
-    title: "INDOOR SIGNS",
-    desc: "Office Name Plates, Direction Signs, Hanging Signs",
-    img: product4,
+    title: "Exhibition Stands",
+    description:
+      "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
+    src: "images/services/ocean-sunset-golden-hour.jpg",
   },
   {
-    title: "SCREEN PRINTING",
-    desc: "Lanyard printing, Cup Printing, Printing on T-shirts",
-    img: product2,
+    title: "Laser Cutting / CNC Work",
+    description:
+      "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
+    src: "images/services/rolling-sand-dunes.jpg",
   },
   {
-    title: "WE OFFER DESIGN SERVICES",
-    desc: "Logo Design, Corporate Identity Design, Company Profile",
-    img: product3,
+    title: "Large Printing",
+    description:
+      "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
+    src: "https://i.pinimg.com/1200x/ef/31/93/ef31939a6adf53bc6c0ab2b9e47144f1.jpg",
   },
   {
-    title: "EXHIBITION STANDS",
-    desc: "Rollup Stands, Popup Stands, Display Stands",
-    img: product4,
+    title: "Signage Work",
+    description:
+      "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
+    src: "https://i.pinimg.com/1200x/ef/31/93/ef31939a6adf53bc6c0ab2b9e47144f1.jpg",
   },
   {
-    title: "T-SHIRT PRINTING",
-    desc: "Screen Printing, Heat Transfer, Embroidery",
-    img: product1,
-  },
-  {
-    title: "PROMOTIONAL ITEMS",
-    desc: "Plastic card, Pen Printing, Lanyard, Printing on Balloons",
-    img: product3,
-  },
-  {
-    title: "OUTDOOR SIGNS",
-    desc: "Shop Signage, Hoarding, Banners, 3D Signs, Pole Sign",
-    img: product4,
-  },
-  {
-    title: "PROMOTIONAL GIFT ITEMS",
-    desc: "T-shirts, Pen, Key Chain, Gift Cards, Mug Printing",
-    img: product2,
-  },
-  {
-    title: "WE OFFER PRINTING SERVICES",
-    desc: "Flyer, Brochure, Business Card, Box Printing, Paper Bags",
-    img: product3,
+    title: "LED Screen",
+    description:
+      "Dynamic LED screen displays for advertising, events, and promotions, ensuring maximum audience engagement.",
+    src: "https://i.pinimg.com/1200x/ef/31/93/ef31939a6adf53bc6c0ab2b9e47144f1.jpg",
   },
 ];
 
