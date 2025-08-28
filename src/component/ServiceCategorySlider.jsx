@@ -40,15 +40,21 @@ export default function ServiceCategorySlider() {
     <section className="service-category-section container">
       <div className="coverflow-wrapper">
         <div className="title text-center text-white">
-          <h2 className={"mb-5"}>
-            <span className="yellow-text">Explore</span> Our Wide Service Range
+          <h2>
+            <span className="yellow-text ">Explore</span> Our Wide Service Range
           </h2>
+          <p className={"mb-3"}>
+            Signage solutions for all.... We have expert team of Signage making in Abu Dhabi to
+            create high quality work. We use our unique approach to produce work that our clients
+            like. We are experts in commercial signage, indoor signage, outdoor signage, industrial
+            sign, shop signage, digital signage in Abu Dhabi.
+          </p>
         </div>
 
-        <div className="info col-12 col-md-3 text-right">
-          <h2>{MAIN_SERVICES[currentIndex].title}</h2>
-          <p>{MAIN_SERVICES[currentIndex].description}</p>
-        </div>
+        {/*<div className="info col-12 col-md-3 text-right">*/}
+        {/*  <h2>{MAIN_SERVICES[currentIndex].title}</h2>*/}
+        {/*  <p>{MAIN_SERVICES[currentIndex].description}</p>*/}
+        {/*</div>*/}
 
         <div className="coverflow-container col-12 col-md-9" tabIndex={0} ref={containerRef}>
           <div className="coverflow">

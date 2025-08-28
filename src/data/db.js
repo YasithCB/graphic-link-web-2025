@@ -152,54 +152,105 @@ export const PROJECTS_DETAILS = [
   },
 ];
 
+// export const MAIN_SERVICES = [
+//   {
+//     title: "Indoor Signs",
+//     description:
+//       "Custom-designed indoor signs that enhance brand visibility in offices, retail stores, and events with premium finishes.",
+//     src: "/images/services/main-services-icons/Signage.svg",
+//   },
+//   {
+//     title: "Outdoor Signs",
+//     description:
+//       "Durable and weather-resistant outdoor signage solutions built to attract attention and withstand harsh conditions.",
+//     src: "/images/services/main-services-icons/Signage.svg",
+//   },
+//   {
+//     title: "Vehicle Graphics",
+//     description:
+//       "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
+//     src: "/images/services/main-services-icons/Vehicle.svg",
+//   },
+//   {
+//     title: "Exhibition Stands",
+//     description:
+//       "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
+//     src: "/images/services/main-services-icons/Signage.svg",
+//   },
+//   {
+//     title: "Laser Cutting / CNC Work",
+//     description:
+//       "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
+//     src: "/images/services/main-services-icons/CNC.svg",
+//   },
+//   {
+//     title: "Large Printing",
+//     description:
+//       "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
+//     src: "/images/services/main-services-icons/large.svg",
+//   },
+//   {
+//     title: "Signage Work",
+//     description:
+//       "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
+//     src: "/images/services/main-services-icons/Signage.svg",
+//   },
+//   {
+//     title: "LED Screen",
+//     description:
+//       "Dynamic LED screen displays for advertising, events, and promotions, ensuring maximum audience engagement.",
+//     src: "/images/services/main-services-icons/LED.svg",
+//   },
+// ];
+
 export const MAIN_SERVICES = [
   {
     title: "Indoor Signs",
     description:
       "Custom-designed indoor signs that enhance brand visibility in offices, retail stores, and events with premium finishes.",
-    src: "/images/services/main-services-icons/Signage.svg",
+    src: "/images/services/main-services-icons/CNC.svg",
   },
   {
     title: "Outdoor Signs",
     description:
       "Durable and weather-resistant outdoor signage solutions built to attract attention and withstand harsh conditions.",
-    src: "/images/services/main-services-icons/Signage.svg",
+    src: "/images/services/main-services-icons/Gift.svg",
   },
   {
     title: "Vehicle Graphics",
     description:
       "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
-    src: "/images/services/main-services-icons/Vehicle.svg",
+    src: "/images/services/main-services-icons/large.svg",
   },
   {
     title: "Exhibition Stands",
     description:
       "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
-    src: "/images/services/main-services-icons/Signage.svg",
+    src: "/images/services/main-services-icons/Laser.svg",
   },
   {
     title: "Laser Cutting / CNC Work",
     description:
       "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
-    src: "/images/services/main-services-icons/CNC.svg",
+    src: "/images/services/main-services-icons/LED.svg",
   },
   {
     title: "Large Printing",
     description:
       "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
-    src: "/images/services/main-services-icons/large.svg",
+    src: "/images/services/main-services-icons/Signage.svg",
   },
   {
     title: "Signage Work",
     description:
       "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
-    src: "/images/services/main-services-icons/Signage.svg",
+    src: "/images/services/main-services-icons/Vehicle.svg",
   },
   {
-    title: "LED Screen",
+    title: "Signage Work",
     description:
-      "Dynamic LED screen displays for advertising, events, and promotions, ensuring maximum audience engagement.",
-    src: "/images/services/main-services-icons/LED.svg",
+      "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
+    src: "/images/services/main-services-icons/safety.svg",
   },
 ];
 

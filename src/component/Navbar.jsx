@@ -61,7 +61,7 @@ export default function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/share/1AXtVazcoy/" target="_blank">
                 <FaFacebook />
               </a>
             </li>

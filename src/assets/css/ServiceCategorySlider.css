@@ -154,7 +154,7 @@
 /* Info display */
 .title {
     position: absolute;
-    top: 92px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
 }

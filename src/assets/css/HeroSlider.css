@@ -6,6 +6,9 @@
     height: 100vh; /* Full screen height */
     z-index: 0; /* Make sure it stays above other sections */
 }
+.hero-title{
+    font-size: 3.5rem;
+}
 
 .hero-swiper {
     width: 100%;
@@ -26,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
 }
 
 .caption {
