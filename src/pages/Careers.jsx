@@ -12,7 +12,7 @@ export default function Careers() {
 
       <div className="container text-center my-5">
         <h2 className="yellow-text mb-3">No Openings At The Moment</h2>
-        <p className="text-white-70">
+        <p className="text-white">
           We may not have active job openings right now, but we’d love to hear from you! Feel free
           to get in touch with us for future opportunities or general inquiries.
         </p>

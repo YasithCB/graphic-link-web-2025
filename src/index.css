@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #f3c623; /* default yellow */
+    --primary-color: rgb(243, 198, 35); /* default yellow */
     --primary-color-dark: #c69f19;
     --primary-color-light: #e6c652;
     --secondary-color: #111111;

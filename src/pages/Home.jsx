@@ -4,6 +4,7 @@ import ServiceCategorySlider from "../component/ServiceCategorySlider";
 import ServiceGallery from "../component/ServiceGallery";
 import OurClients from "../component/OurClients";
 import OurMembers from "../component/OurMembers";
+import ServicesGrid from "../component/ServiceGrid";
 
 const Home = () => {
   const [bottomBg, setBottomBg] = useState(-1);
@@ -20,6 +21,7 @@ const Home = () => {
     <div>
       <div className="home main-content">
         <ServiceCategorySlider />
+        <ServicesGrid />
         <ServiceGallery />
         <OurClients />
       </div>

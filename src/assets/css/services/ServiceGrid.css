@@ -1,0 +1,60 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px;
+}
+
+/* Normal services fill the left 3 columns */
+.service-card {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Long service on right, spanning 2 rows */
+.large-service {
+    grid-column: 4;      /* 4th column */
+    grid-row: span 2;    /* spans 2 rows */
+}
+
+/* Last card spans full width */
+.services-grid .service-card:last-child {
+    grid-column: 1 / -1; /* spans all columns */
+}
+
+
+.service-card:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 255, 0, 0.16);
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+.icon-bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.service-card h4 {
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.service-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.service-card ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.68);
+}

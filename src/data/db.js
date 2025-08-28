@@ -1,53 +1,23 @@
 export const TEAM_MEMBERS = [
   {
-    name: "Fredrick Armstrong",
-    description: "Creative Director with 10 years of experience in branding and advertising.",
-    imageUrl: "images/members/person_1.jpg",
+    name: "Name here",
+    description: "desc here",
+    imageUrl: "images/members/member-1.png",
   },
   {
-    name: "Samantha Lee",
-    description: "Senior Graphic Designer specializing in digital and print media.",
-    imageUrl: "images/members/person_2.jpg",
+    name: "Name here",
+    description: "desc here",
+    imageUrl: "images/members/member-2.png",
   },
   {
-    name: "James Wilson",
-    description: "Marketing Manager focused on growth and brand strategy solutions.",
-    imageUrl: "images/members/person_3.jpg",
+    name: "Name here",
+    description: "desc here",
+    imageUrl: "images/members/member-3.png",
   },
   {
-    name: "Olivia Johnson",
-    description: "UI/UX Designer creating intuitive user experiences for web and mobile.",
-    imageUrl: "images/members/person_4.jpg",
-  },
-  {
-    name: "Michael Brown",
-    description: "Software Engineer with expertise in frontend development and React.",
-    imageUrl: "images/members/person_2.jpg",
-  },
-  {
-    name: "Emily Davis",
-    description: "Content Creator and Social Media Specialist helping brands engage users.",
-    imageUrl: "images/members/person_1.jpg",
-  },
-  {
-    name: "William Taylor",
-    description: "Project Manager coordinating creative projects from concept to delivery.",
-    imageUrl: "images/members/person_3.jpg",
-  },
-  {
-    name: "Sophia Martinez",
-    description: "Photographer capturing visuals for marketing campaigns and branding.",
-    imageUrl: "images/members/person_1.jpg",
-  },
-  {
-    name: "Daniel Anderson",
-    description: "Videographer and Motion Designer producing engaging promotional videos.",
-    imageUrl: "images/members/person_2.jpg",
-  },
-  {
-    name: "Isabella Thomas",
-    description: "Brand Strategist developing identity and marketing solutions for clients.",
-    imageUrl: "images/members/person_3.jpg",
+    name: "Name here",
+    description: "desc here",
+    imageUrl: "images/members/member-4.png",
   },
 ];
 
