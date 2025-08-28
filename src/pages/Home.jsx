@@ -22,7 +22,7 @@ const Home = () => {
       <div className="home main-content">
         <ServiceCategorySlider />
         <ServicesGrid />
-        <ServiceGallery />
+        {/*<ServiceGallery />*/}
         <OurClients />
       </div>
 
