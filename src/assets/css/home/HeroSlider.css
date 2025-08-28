@@ -10,6 +10,21 @@
     font-size: 3.5rem;
 }
 
+.blinking-cursor {
+    display: inline-block;
+    width: 3px;             /* cursor width */
+    height: 0.7em;            /* cursor height, matches text */
+    background-color: white; /* cursor color */
+    margin-left: 10px;        /* optional spacing from text */
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-swiper {
     width: 100%;
     height: 100%;

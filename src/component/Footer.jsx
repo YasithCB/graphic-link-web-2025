@@ -22,7 +22,9 @@ export default function Footer() {
             {/* Text column */}
             <div className="col-8">
               <h5 className="m-0">Official Address</h5>
-              <p className="text-white-50">M40, Abu Dhabi - UAE</p>
+              <p className="text-white-50">
+                13B-M44-Musaffah Industrial <br /> Abu Dhabi, UAE
+              </p>
             </div>
           </div>
         </div>
@@ -52,8 +54,11 @@ export default function Footer() {
             </div>
             <div className="col-8">
               <h5 className="m-0">Call Us</h5>
-              <a className="text-white-50" href="tel:+971506302270">
+              <a className="text-white-50 d-block" href="tel:+971506302270">
                 +971 50 630 2270
+              </a>
+              <a className="text-white-50" href="tel:+971507674073">
+                +971 50 767 4073
               </a>
             </div>
           </div>
@@ -67,7 +72,7 @@ export default function Footer() {
             stainless steel, flash, channelium, acrylic letters, neon signs, brass signs, UV
             printing, sticker printing, powder coating, etching, colour filing, gold plating,
             electroplating, and LED transformer installation indoor and outdoor, Back Drops, Vehicle
-            Branding Let us know how we can bring your brand to life."
+            Branding Let us know how we can bring your brand to life.
           </p>
           <p className="text-white-50">© 2025 Graphic Link. All rights reserved.</p>
         </div>

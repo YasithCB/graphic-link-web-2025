@@ -2,12 +2,17 @@ export const TEAM_MEMBERS = [
   {
     name: "Name here",
     description: "desc here",
+    imageUrl: "images/members/member-2.png",
+  },
+  {
+    name: "Name here",
+    description: "desc here",
     imageUrl: "images/members/member-1.png",
   },
   {
     name: "Name here",
     description: "desc here",
-    imageUrl: "images/members/member-2.png",
+    imageUrl: "images/members/member-4.png",
   },
   {
     name: "Name here",
@@ -17,7 +22,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Name here",
     description: "desc here",
-    imageUrl: "images/members/member-4.png",
+    imageUrl: "images/members/member-5.png",
   },
 ];
 

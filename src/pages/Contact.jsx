@@ -68,7 +68,7 @@ export default function Contact() {
                     <div>
                       <h6 className="fw-bolder m-0">Email</h6>
                       <a className="text-secondary-emphasis" href="mailto:info@graphiclink.com">
-                        info@graphiclink.com
+                        info@graphiclink.ae
                       </a>
                     </div>
                   </div>
