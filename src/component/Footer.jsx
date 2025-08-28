@@ -39,7 +39,9 @@ export default function Footer() {
             </div>
             <div className="col-8">
               <h5 className="m-0">Email Us</h5>
-              <p className="text-white-50">graphiclink@gmail.com</p>
+              <a className="text-white-50" href="mailto:info@graphiclink.com">
+                info@graphiclink.com
+              </a>
             </div>
           </div>
 
@@ -50,7 +52,9 @@ export default function Footer() {
             </div>
             <div className="col-8">
               <h5 className="m-0">Call Us</h5>
-              <p className="text-white-50">+971 50 767 4073</p>
+              <a className="text-white-50" href="tel:+971506302270">
+                +971 50 630 2270
+              </a>
             </div>
           </div>
         </div>

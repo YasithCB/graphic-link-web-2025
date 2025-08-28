@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/OurClients.css";
+import "../assets/css/home/OurClients.css";
 import { CLIENTS } from "../data/db";
 
 export default function OurClients() {

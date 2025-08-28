@@ -1,5 +1,5 @@
 import "swiper/css";
-import "../assets/css/Services.css";
+import "../assets/css/services/Services.css";
 import PageHeader from "../component/PageHeader";
 import React from "react";
 import ServiceCategorySlider from "../component/ServiceCategorySlider";

@@ -12,6 +12,9 @@ body {
     background-color: #111111 !important;
     color: white; /* optional, makes text visible */
 }
+p{
+    font-weight: 600 !important;
+}
 /* Hide scrollbar : For Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     display: none;
@@ -21,6 +24,7 @@ html {
     scrollbar-width: none; /* hides scrollbar */
 }
 a, Link{
+    font-weight: 600 !important;
     text-decoration: none !important;
     cursor: pointer;
 }

@@ -10,6 +10,8 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Services from "./pages/Services";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Careers from "./pages/Careers";
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="careers" element={<Careers />} />
         </Route>
       </Routes>
     </BrowserRouter>

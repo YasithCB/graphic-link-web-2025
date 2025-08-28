@@ -1,4 +1,4 @@
-import "../assets/css/ServiceGallery.css";
+import "../assets/css/services/ServiceGallery.css";
 
 export default function ServiceGallery() {
   const galleryItems = [

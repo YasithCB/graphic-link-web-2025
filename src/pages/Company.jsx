@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import "../assets/css/Home.css";
+import "../assets/css/home/Home.css";
 import VisionMissionCarousel from "../component/VisionMissionCarousel";
 import TeamSlider from "../component/TeamSlider";
 import { TEAM_MEMBERS } from "../data/db";

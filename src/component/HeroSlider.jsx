@@ -3,7 +3,7 @@ import { Autoplay, Pagination, Parallax } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../assets/css/HeroSlider.css";
+import "../assets/css/home/HeroSlider.css";
 import React from "react";
 
 export default function HeroSlider() {

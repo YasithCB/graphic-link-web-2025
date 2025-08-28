@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../assets/css/ServiceCategorySlider.css";
+import "../assets/css/services/ServiceCategorySlider.css";
 import { MAIN_SERVICES } from "../data/db";
 
 export default function ServiceCategorySlider() {
