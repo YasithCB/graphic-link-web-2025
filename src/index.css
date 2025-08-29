@@ -89,6 +89,9 @@ button {
 .yellow-text{
     color: #f3c623;
 }
+.secondary-text{
+    color: var(--secondary-color);
+}
 .sub-title{
     display: block;
     text-transform: uppercase;
@@ -100,7 +103,7 @@ button {
 
 /*background -bg*/
 .bg-yellow{
-    background-color: #e6bb1e;
+    background-color: var(--primary-color-dark);
 }
 .bg-yellow-light{
     background-color: darkkhaki;
@@ -121,8 +124,8 @@ button {
 /*logo-fixed*/
 .logo-fixed {
     position: fixed;
-    top: 100px;     /* distance from top */
-    left: 30px;    /* distance from left */
+    top: 21vh;     /* distance from top */
+    left: 20px;    /* distance from left */
     z-index: 9; /* keeps it above other elements */
 }
 

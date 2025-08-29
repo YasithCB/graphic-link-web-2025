@@ -11,7 +11,7 @@ export default function Careers() {
   }, []);
 
   return (
-    <section className="about-section">
+    <section className="careers-section">
       <PageHeader
         title="Be a Part of Our Mission"
         backgroundImage={"/images/about/about-header.jpg"}

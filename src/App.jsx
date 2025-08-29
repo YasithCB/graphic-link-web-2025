@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import AOS from "aos";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -45,6 +46,8 @@ export default function App() {
 }
 
 function Layout() {
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init(AOS_CONFIG.global);
   }, []);
@@ -61,7 +64,16 @@ function Layout() {
       {/* Page content goes here */}
       <main className="portfolio-wrap">
         <section className="ftco-section p-0">
-          <Outlet /> {/* This will render Home, About, etc */}
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={location.pathname}
+              initial={location.pathname === "/" ? false : { opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Outlet />
+            </motion.div>
+          </AnimatePresence>
         </section>
       </main>
 

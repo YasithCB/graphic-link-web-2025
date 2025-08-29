@@ -20,8 +20,8 @@ export const TEAM_MEMBERS = [
     imageUrl: "images/members/member-4.png",
   },
   {
-    name: "Name here",
-    description: "desc here",
+    name: "Yasith C Bandara",
+    description: "Software Developer",
     imageUrl: "images/members/member-5.png",
   },
 ];
@@ -127,57 +127,6 @@ export const PROJECTS_DETAILS = [
   },
 ];
 
-// export const MAIN_SERVICES = [
-//   {
-//     title: "Indoor Signs",
-//     description:
-//       "Custom-designed indoor signs that enhance brand visibility in offices, retail stores, and events with premium finishes.",
-//     src: "/images/services/main-services-icons/Signage.svg",
-//   },
-//   {
-//     title: "Outdoor Signs",
-//     description:
-//       "Durable and weather-resistant outdoor signage solutions built to attract attention and withstand harsh conditions.",
-//     src: "/images/services/main-services-icons/Signage.svg",
-//   },
-//   {
-//     title: "Vehicle Graphics",
-//     description:
-//       "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
-//     src: "/images/services/main-services-icons/Vehicle.svg",
-//   },
-//   {
-//     title: "Exhibition Stands",
-//     description:
-//       "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
-//     src: "/images/services/main-services-icons/Signage.svg",
-//   },
-//   {
-//     title: "Laser Cutting / CNC Work",
-//     description:
-//       "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
-//     src: "/images/services/main-services-icons/CNC.svg",
-//   },
-//   {
-//     title: "Large Printing",
-//     description:
-//       "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
-//     src: "/images/services/main-services-icons/large.svg",
-//   },
-//   {
-//     title: "Signage Work",
-//     description:
-//       "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
-//     src: "/images/services/main-services-icons/Signage.svg",
-//   },
-//   {
-//     title: "LED Screen",
-//     description:
-//       "Dynamic LED screen displays for advertising, events, and promotions, ensuring maximum audience engagement.",
-//     src: "/images/services/main-services-icons/LED.svg",
-//   },
-// ];
-
 export const MAIN_SERVICES = [
   {
     title: "CNC Cutting",
@@ -267,56 +216,4 @@ export const MAIN_SERVICES = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzLYrCcpwgkdNTO3J86eGGRWVj3iBr0AKyw&s",
     ],
   },
-];
-
-export const CLIENTS = [
-  {
-    name: "Obelisk",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    link: "#",
-  },
-  {
-    name: "Client 2",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    link: "#",
-  },
-  {
-    name: "Obelisk",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    link: "#",
-  },
-  {
-    name: "Client 2",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    link: "#",
-  },
-  {
-    name: "Obelisk",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    link: "#",
-  },
-  {
-    name: "Client 2",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    link: "#",
-  },
-  {
-    name: "Obelisk",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/01-1.png",
-    link: "#",
-  },
-  {
-    name: "Client 2",
-    imgFront: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    imgBack: "https://obelisk.themescamp.com/wp-content/uploads/2021/09/02.png",
-    link: "#",
-  },
-  // add more clients...
 ];

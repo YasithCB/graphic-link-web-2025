@@ -6,9 +6,9 @@ export default function PersonCardLandscape({ name, description, imageUrl }) {
       <div className="img-square">
         <img src={imageUrl} alt={name} />
       </div>
-      <div className="">
-        <h3>{name}</h3>
-        <p className="m-0 text-right">{description}</p>
+      <div>
+        <h5>{name}</h5>
+        <p className="text-white-50">{description}</p>
       </div>
     </div>
   );

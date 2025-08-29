@@ -1,20 +1,51 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaTimes, FaTiktok } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTimes,
+  FaTiktok,
+  FaPhone,
+  FaEnvelope,
+  FaGlobe,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 import "../assets/css/Navbar.css";
 
 export default function Navbar() {
   const [isMobileOpen, setMobileOpen] = useState(false);
 
-  const linkClass = ({ isActive }) =>
-    isActive
-      ? "active-nav-item" // active link style
-      : "hover:text-blue-400"; // normal hover style
+  const linkClass = ({ isActive }) => (isActive ? "active-nav-item" : "hover:text-blue-400");
 
   return (
-    <nav className="my-navbar">
-      <div className="container-fluid flex items-center justify-between py-3">
+    <nav className="my-navbar-full">
+      {/* 🔹 Top Info Strip */}
+      <div className="bg-yellow secondary-text text-sm py-2 d-none d-lg-block justify-content-center">
+        <div className="container d-flex justify-content-center gap-5">
+          <span className="d-flex align-items-center gap-2">
+            <FaPhone />{" "}
+            <a className="text-secondary-emphasis" href="tel:+971506302270">
+              +971 50 630 2270
+            </a>
+          </span>
+          <span className="d-flex align-items-center gap-2">
+            <FaEnvelope />{" "}
+            <a className="text-secondary-emphasis" href="mailto:info@graphiclink.com">
+              info@graphiclink.ae
+            </a>
+          </span>
+          <span className="d-flex align-items-center gap-2">
+            <FaGlobe /> www.graphiclink.ae
+          </span>
+          <span className="d-flex align-items-center gap-2">
+            <FaMapMarkerAlt /> Abu Dhabi, UAE
+          </span>
+        </div>
+      </div>
+
+      {/* 🔹 Main Navbar */}
+      <div className="container-fluid my-navbar-main flex items-center justify-between py-3 px-4">
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="menu flex gap-6 font-medium">
@@ -68,7 +99,7 @@ export default function Navbar() {
             <li>
               <a
                 href="https://www.instagram.com/graphic_link1?igsh=bnVzNHV6ZmhkcmQ0"
-                target={"_blank"}
+                target="_blank"
               >
                 <FaInstagram />
               </a>
@@ -82,12 +113,29 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* 🔹 Mobile Menu */}
       {isMobileOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center z-50 text-white text-xl">
           <button className="absolute top-6 right-6" onClick={() => setMobileOpen(false)}>
             <FaTimes size={28} />
           </button>
+
+          {/* Info Strip Inside Mobile Menu */}
+          <div className="mb-8 text-center text-sm space-y-3">
+            <p className="flex items-center gap-2 justify-center">
+              <FaPhone /> +971 50 123 4567
+            </p>
+            <p className="flex items-center gap-2 justify-center">
+              <FaEnvelope /> info@example.com
+            </p>
+            <p className="flex items-center gap-2 justify-center">
+              <FaGlobe /> www.example.com
+            </p>
+            <p className="flex items-center gap-2 justify-center">
+              <FaMapMarkerAlt /> Dubai, UAE
+            </p>
+          </div>
+
           <ul className="flex flex-col gap-6">
             <li>
               <NavLink to="/" className={linkClass} onClick={() => setMobileOpen(false)}>

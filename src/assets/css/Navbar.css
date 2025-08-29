@@ -1,8 +1,12 @@
-.my-navbar{
-    z-index: 999 !important;
+.my-navbar-full{
     position: fixed !important;
     width: 100vw;
+    top: 0; z-index: 99;
+    background: var(--my-navbar-bg);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--my-navbar-border);
 }
+
 /* Active Nav Item */
 .active-nav-item {
     position: relative;
@@ -41,13 +45,10 @@
 }
 
 .my-navbar{
-    position: sticky; top: 0; z-index: 1000;
-    background: var(--my-navbar-bg);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--my-navbar-border);
+
 }
 
-.my-navbar .container-fluid{
+.my-navbar-full .container-fluid{
     max-width: fit-content; margin: 0 auto;
     padding: 0 24px; height: 78px;
     display: flex; align-items: center; justify-content: space-between;
@@ -62,19 +63,19 @@
 .md\:hidden{ display:inline-block; }/* will be hidden at ≥768px */
 
 /* Menu */
-.my-navbar ul{ list-style:none; margin:0; padding:0; }
-.my-navbar .menu{ display:flex; gap:24px; }
-.my-navbar .menu a{
+.my-navbar-full ul{ list-style:none; margin:0; padding:0; }
+.my-navbar-full .menu{ display:flex; gap:24px; }
+.my-navbar-full .menu a{
     color: var(--link-dim); text-decoration:none; font-weight:500;
     transition: color .2s ease;
 }
-.my-navbar .menu a:hover,
-.my-navbar .menu a[aria-current="page"]{ color: var(--link); }
+.my-navbar-full .menu a:hover,
+.my-navbar-full .menu a[aria-current="page"]{ color: var(--link); }
 
 /* Socials */
-.my-navbar .icons{ display:flex; gap:16px; font-size:18px; }
-.my-navbar .icons a{ color: var(--link-dim); transition: color .2s ease; }
-.my-navbar .icons a:hover{ color: var(--accent); }
+.my-navbar-full .icons{ display:flex; gap:16px; font-size:18px; }
+.my-navbar-full .icons a{ color: var(--link-dim); transition: color .2s ease; }
+.my-navbar-full .icons a:hover{ color: var(--accent); }
 
 
 

@@ -20,7 +20,7 @@
 }
 .bottom-img-bg{
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../../../../public/images/home/bottom-bg-offset-printer.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/images/home/bottom-bg-offset-printer.jpg");
     position: fixed;
     top: 0;
     width: 100vw;
