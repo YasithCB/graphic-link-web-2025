@@ -1,8 +1,14 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import AOS from "aos";
+
 import emailJs from "emailjs-com";
+import { AOS_CONFIG } from "../data/constants";
 
 export default function ContactForm() {
   const form = useRef();
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,8 +35,10 @@ export default function ContactForm() {
 
   return (
     <div className="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
-      <div className="contact-wrap w-100 p-md-5 p-4">
-        <h3 className="mb-4 heading">Say Hello</h3>
+      <div className="contact-wrap w-100 p-md-5 p-4" {...AOS_CONFIG.fade}>
+        <h3 className="mb-4 heading" {...AOS_CONFIG.zoom}>
+          Say Hello
+        </h3>
         <form
           ref={form}
           onSubmit={sendEmail}

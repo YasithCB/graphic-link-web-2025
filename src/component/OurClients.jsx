@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import "../assets/css/home/OurClients.css";
-import { CLIENTS } from "../data/db";
+import { AOS_CONFIG } from "../data/constants";
 
 export default function OurClients() {
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
+
   return (
     <section className="clients-section my-5 py-5 bg-white">
-      <div className="container">
+      <div className="container" {...AOS_CONFIG.fade}>
         {/* Heading */}
         <div className="text-center section-header d-flex flex-column justify-content-center mb-4">
           <span className="sub-title text-secondary">Best Experience</span>

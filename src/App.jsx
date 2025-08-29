@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/css/MiniSidebar.css";
@@ -12,6 +14,7 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
+import { AOS_CONFIG } from "./data/constants";
 
 export default function App() {
   return (
@@ -40,12 +43,16 @@ export default function App() {
 }
 
 function Layout() {
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
+
   return (
     <div>
       <Navbar />
 
       {/* Static logo on top-left */}
-      <div className="logo-fixed">
+      <div className="logo-fixed" {...AOS_CONFIG.zoom}>
         <img src="/images/logo/logo-white.svg" alt="Logo" />
       </div>
 

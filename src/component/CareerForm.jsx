@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { AOS_CONFIG } from "../data/constants";
+import AOS from "aos";
 
 export default function CareerForm() {
   const [fileName, setFileName] = useState("");
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
 
   const handleFileChange = (e) => {
     if (e.target.files.length > 0) {
@@ -11,7 +16,7 @@ export default function CareerForm() {
     }
   };
   return (
-    <div className="col-12 d-flex">
+    <div className="col-12 d-flex" {...AOS_CONFIG.zoom}>
       <div className="contact-wrap w-100 p-md-5 p-4">
         <form onSubmit={() => {}} id="contactForm" name="contactForm" className="contactForm">
           <div className="row">

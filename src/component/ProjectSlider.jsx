@@ -1,9 +1,14 @@
 import React, { useEffect } from "react";
+import AOS from "aos";
+
 import { PROJECTS_DETAILS } from "../data/db";
 import "../assets/css/ProjectSlider.css";
+import { AOS_CONFIG } from "../data/constants";
 
 export default function ProjectSlider() {
   useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+
     let nextButton = document.getElementById("next");
     let prevButton = document.getElementById("prev");
     let carousel = document.querySelector(".carousel");
@@ -58,7 +63,7 @@ export default function ProjectSlider() {
 
   return (
     <div className={"text-white"}>
-      <div className="carousel mt-3 ">
+      <div className="carousel mt-3 " {...AOS_CONFIG.fade}>
         <div className="list">
           {PROJECTS_DETAILS.map((project) => (
             <div className="item" key={project.id}>

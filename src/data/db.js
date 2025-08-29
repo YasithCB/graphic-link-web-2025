@@ -180,52 +180,92 @@ export const PROJECTS_DETAILS = [
 
 export const MAIN_SERVICES = [
   {
-    title: "Indoor Signs",
+    title: "CNC Cutting",
     description:
       "Custom-designed indoor signs that enhance brand visibility in offices, retail stores, and events with premium finishes.",
     src: "/images/services/main-services-icons/CNC.svg",
+    subImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1wloJhE7cmIUgEyNEQqi7n62dN6B3UmL9w&s",
+      "https://uaecncwork.com/wp-content/uploads/2022/01/mashrabiya-4-of-4-768x513.jpeg",
+      "https://5.imimg.com/data5/SELLER/Default/2022/9/LT/NC/TS/3068779/stainless-steel-designer-grill-500x500.png",
+    ],
   },
   {
-    title: "Outdoor Signs",
+    title: "Gift Items",
     description:
       "Durable and weather-resistant outdoor signage solutions built to attract attention and withstand harsh conditions.",
     src: "/images/services/main-services-icons/Gift.svg",
-  },
-  {
-    title: "Vehicle Graphics",
-    description:
-      "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
-    src: "/images/services/main-services-icons/large.svg",
-  },
-  {
-    title: "Exhibition Stands",
-    description:
-      "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
-    src: "/images/services/main-services-icons/Laser.svg",
-  },
-  {
-    title: "Laser Cutting / CNC Work",
-    description:
-      "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
-    src: "/images/services/main-services-icons/LED.svg",
+    subImages: [
+      "https://www.almalaky.com/wp-content/uploads/2023/11/Gift-items.png",
+      "https://creation-studios.com/wp-content/uploads/2020/10/national-day-gift-set-768x574.jpg",
+      "https://creation-studios.com/wp-content/uploads/2020/10/Luxury-national-day-gift-set.jpg",
+    ],
   },
   {
     title: "Large Printing",
     description:
-      "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
-    src: "/images/services/main-services-icons/Signage.svg",
+      "Eye-catching vehicle wraps and decals that turn your car, van, or fleet into a powerful moving advertisement.",
+    src: "/images/services/main-services-icons/large.svg",
+    subImages: [
+      "https://www.mavenstouch.com/wp-content/uploads/2022/03/lpf-pic.jpg",
+      "https://www.doodon.com/media/wysiwyg/large-format-printer-landing.png",
+      "https://www.imageoneframes.com/wp-content/uploads/2025/05/printing2-1024x683.webp",
+    ],
+  },
+  {
+    title: "Laser Cutting",
+    description:
+      "Creative and functional exhibition stand designs that make your brand stand out in trade shows and events.",
+    src: "/images/services/main-services-icons/Laser.svg",
+    subImages: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo1wloJhE7cmIUgEyNEQqi7n62dN6B3UmL9w&s",
+      "https://uaecncwork.com/wp-content/uploads/2022/01/mashrabiya-4-of-4-768x513.jpeg",
+      "https://5.imimg.com/data5/SELLER/Default/2022/9/LT/NC/TS/3068779/stainless-steel-designer-grill-500x500.png",
+    ],
+  },
+  {
+    title: "LED Screen",
+    description:
+      "Precision laser cutting and CNC services for signage, displays, and custom designs with perfect detailing.",
+    src: "/images/services/main-services-icons/LED.svg",
+    subImages: [
+      "https://www.infiled.com/wp-content/uploads/2024/02/photos-import-00_00_00_18-still019-640x360.jpeg",
+      "https://megacom.ae/wp-content/uploads/2024/05/outdoor-led-screen.webp",
+      "https://nseledcloud.com/wp-content/uploads/2022/03/Take-you-to-understand-NSE-patented-product%E2%80%94%E2%80%94Taxi-LED-Display-26.png",
+    ],
   },
   {
     title: "Signage Work",
+    description:
+      "High-quality large format printing for banners, posters, billboards, and backdrops that demand attention.",
+    src: "/images/services/main-services-icons/Signage.svg",
+    subImages: [
+      "https://www.chrysels.com/img/products/signage-company-dubai/landing//retail-signage.webp",
+      "https://www.chrysels.com/img/products/signage-company-dubai/landing//Outdoor%20Sign%20JJ.jpg",
+      "https://nova-sign.com/wp-content/uploads/2023/04/Home-page-photo-01-1024x1024.jpg",
+    ],
+  },
+  {
+    title: "Vehicle Graphics",
     description:
       "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
     src: "/images/services/main-services-icons/Vehicle.svg",
+    subImages: [
+      "https://nova-sign.com/wp-content/uploads/elementor/thumbs/Car-Full-Branding-qsjb2hb57iua4pku828kqgql52ltk6sp0n9d58moq4.png",
+      "https://www.icatch.ae/assets/img/Vbranding1.jpg",
+      "https://printzonedubai.com/wp-content/uploads/2024/05/Van-Branding-2-2.jpeg",
+    ],
   },
   {
-    title: "Signage Work",
+    title: "Safety Signage",
     description:
       "Complete signage solutions including illuminated, 3D, and custom signs designed to elevate your brand identity.",
     src: "/images/services/main-services-icons/safety.svg",
+    subImages: [
+      "https://gulfsafety.com/images/item/2017924_1014167261.JPG",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShnvwq6ajvE9zOHKGYv1CXo8nVB38SHFI3qA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThzLYrCcpwgkdNTO3J86eGGRWVj3iBr0AKyw&s",
+    ],
   },
 ];
 

@@ -1,7 +1,13 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
+import AOS from "aos";
 import PageHeader from "../component/PageHeader";
+import { AOS_CONFIG } from "../data/constants";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
+
   return (
     <section className="about-section">
       <PageHeader
@@ -23,10 +29,11 @@ const About = () => {
               backgroundRepeat: "no-repeat",
               height: "-webkit-fill-available",
             }}
+            {...AOS_CONFIG.zoom}
           ></div>
 
           {/*text*/}
-          <div className="col-md-6">
+          <div className="col-md-6" {...AOS_CONFIG.fade}>
             <div className="text pt-5 px-md-5">
               <div className="px-4 px-lg-4">
                 <div className="desc text-md-right text-white">

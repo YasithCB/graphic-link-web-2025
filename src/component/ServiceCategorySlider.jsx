@@ -1,19 +1,27 @@
 import React, { useState, useEffect, useRef } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../assets/css/services/ServiceCategorySlider.css";
 import { MAIN_SERVICES } from "../data/db";
+import { AOS_CONFIG } from "../data/constants";
 
 export default function ServiceCategorySlider() {
   const [isPlaying, setIsPlaying] = useState(true);
   const autoplayRef = useRef(null);
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(3);
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
 
   // Handle autoplay
   useEffect(() => {
     if (isPlaying) {
       autoplayRef.current = setInterval(() => {
         setCurrentIndex((prev) => (prev + 1) % MAIN_SERVICES.length);
-      }, 4000);
+      }, 2000);
     }
     return () => clearInterval(autoplayRef.current);
   }, [isPlaying]);
@@ -30,6 +38,8 @@ export default function ServiceCategorySlider() {
 
   const goToIndex = (index) => {
     setCurrentIndex(index);
+    setSelectedIndex(index); // 👈 store clicked index
+
     stopAutoplay();
   };
 
@@ -39,24 +49,24 @@ export default function ServiceCategorySlider() {
   return (
     <section className="service-category-section container">
       <div className="coverflow-wrapper">
-        <div className="title text-center text-white">
+        <div {...AOS_CONFIG.fade} className="title text-center text-white">
           <h2>
-            <span className="yellow-text ">Explore</span> Our Wide Service Range
+            <span className="yellow-text">Explore</span> Our Wide Service Range
           </h2>
-          <p className={"mb-3"}>
-            Signage solutions for all.... We have expert team of Signage making in Abu Dhabi to
-            create high quality work. We use our unique approach to produce work that our clients
-            like. We are experts in commercial signage, indoor signage, outdoor signage, industrial
-            sign, shop signage, digital signage in Abu Dhabi.
+          <p className="mb-3">
+            Signage solutions for all.... We have an expert team of Signage making in Abu Dhabi to
+            create high-quality work. We use our unique approach to produce work that our clients
+            love. We are experts in commercial signage, indoor signage, outdoor signage, industrial
+            signage, shop signage, and digital signage in Abu Dhabi.
           </p>
         </div>
 
-        {/*<div className="info col-12 col-md-3 text-right">*/}
-        {/*  <h2>{MAIN_SERVICES[currentIndex].title}</h2>*/}
-        {/*  <p>{MAIN_SERVICES[currentIndex].description}</p>*/}
-        {/*</div>*/}
-
-        <div className="coverflow-container col-12 col-md-9" tabIndex={0} ref={containerRef}>
+        <div
+          className="coverflow-container col-12 col-md-10"
+          tabIndex={0}
+          ref={containerRef}
+          {...AOS_CONFIG.zoom}
+        >
           <div className="coverflow">
             {MAIN_SERVICES.map((img, index) => {
               let offset = index - currentIndex;
@@ -124,6 +134,19 @@ export default function ServiceCategorySlider() {
             )}
           </button>
         </div>
+
+        {/* 👇 Extra section only when item clicked */}
+        {selectedIndex !== null && isPlaying === false && (
+          <div className="details-container col-12 col-md-2">
+            <div className="extra-images mt-4">
+              <div className="d-flex flex-column align-items-end gap-3">
+                {MAIN_SERVICES[selectedIndex]?.subImages?.map((img, idx) => (
+                  <img key={idx} src={img} alt={`extra-${idx}`} className="extra-thumb" />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

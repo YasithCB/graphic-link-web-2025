@@ -1,5 +1,6 @@
 // ServicesGrid.jsx
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import "../assets/css/services/ServiceGrid.css";
 import {
   FaCube,
@@ -11,11 +12,12 @@ import {
   FaSign,
   FaBuilding,
 } from "react-icons/fa";
+import { AOS_CONFIG } from "../data/constants";
 
 const services = [
   {
     icon: <FaCube />,
-    title: "3D Signages",
+    title: "3D Signage",
     items: ["3D Acrylic Signs", "Stainless Steel Signs", "3D Wooden Signs"],
   },
   {
@@ -100,6 +102,10 @@ const services = [
 ];
 
 export default function ServicesGrid() {
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
+
   return (
     <div className="container">
       <div className="services-grid">
@@ -107,6 +113,7 @@ export default function ServicesGrid() {
           <div
             key={index}
             className={`service-card ${service.title === "Large Printing" ? "large-service" : ""}`}
+            {...AOS_CONFIG.zoom}
           >
             <div className="row align-items-center mb-3">
               <div className="icon-bg col-1">{service.icon}</div>
@@ -121,7 +128,7 @@ export default function ServicesGrid() {
         ))}
       </div>
 
-      <div className="row my-5 no-gutters align-items-center">
+      <div className="row my-5 no-gutters align-items-center" {...AOS_CONFIG.fade}>
         {/*img*/}
         <div
           className="col order-md-last img d-flex align-items-center justify-content-center"

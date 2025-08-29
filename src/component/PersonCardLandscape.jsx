@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PersonCardLandscape({ name, description, imageUrl }) {
   return (
-    <div className="about-author d-flex flex-column align-items-center gap-4 p-4 col-6 col-md cursor-pointer">
+    <div className="about-author d-flex flex-column gap-4 p-4 col-6 col-md-2 cursor-pointer">
       <div className="img-square">
         <img src={imageUrl} alt={name} />
       </div>

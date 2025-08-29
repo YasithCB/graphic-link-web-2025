@@ -7,6 +7,29 @@
     justify-content: center;
 }
 
+/*images aside*/
+.extra-thumb {
+    width: 200px !important;
+    height: 150px !important;
+    border-radius: 10px !important;
+}
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.details-container {
+    animation: fadeSlideIn 0.9s ease forwards;
+}
+
+/*images aside*/
+
 /* Home Section with Coverflow */
 .coverflow-wrapper {
     width: 100%;
@@ -154,9 +177,8 @@
 /* Info display */
 .title {
     position: absolute;
+    margin: 1vw 10vw !important;
     top: 8vh;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .info {
     color: white;

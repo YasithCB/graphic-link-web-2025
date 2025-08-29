@@ -1,10 +1,16 @@
-import React, { memo } from "react";
+import React, { memo, useEffect } from "react";
 import TeamSlider from "../component/TeamSlider";
+import AOS from "aos";
 import { TEAM_MEMBERS } from "../data/db";
+import { AOS_CONFIG } from "../data/constants";
 
 export default function OurMembers() {
+  useEffect(() => {
+    AOS.init(AOS_CONFIG.global);
+  }, []);
+
   return (
-    <section className="our-members-section mt-3 pb-3 bg-dark-50 ">
+    <section className="our-members-section mt-3 pb-3 bg-dark-50 " {...AOS_CONFIG.fade}>
       <div className="container">
         <div className="row no-gutters align-items-center">
           <div className="text pt-5 px-0">
