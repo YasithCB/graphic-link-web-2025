@@ -15,10 +15,12 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
 import { AOS_CONFIG } from "./data/constants";
+import ScrollToTop from "./component/ScrollToTop";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop /> {/* ✅ This ensures scroll resets on route change */}
       <Routes>
         {/* Layout wraps all routes */}
         <Route path="/" element={<Layout />}>
