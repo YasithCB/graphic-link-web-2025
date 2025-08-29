@@ -5,7 +5,6 @@ import AOS from "aos";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./assets/css/MiniSidebar.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import HeroSlider from "./component/HeroSlider";
@@ -60,6 +59,11 @@ function Layout() {
       <div className="logo-fixed" {...AOS_CONFIG.zoom}>
         <img src="/images/logo/logo-white.svg" alt="Logo" />
       </div>
+
+      {/* Floating Get Quote Button */}
+      <a href="/contact" className="get-quote-btn d-flex align-items-center gap-2">
+        <i className="fas fa-file-import"></i> Get Quote
+      </a>
 
       {/* Page content goes here */}
       <main className="portfolio-wrap">

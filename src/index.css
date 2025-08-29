@@ -133,4 +133,25 @@ button {
     width: 5vw;  /* adjust size */
     height: auto;  /* keep aspect ratio */
 }
+.get-quote-btn {
+    position: fixed;
+    background-color: var(--primary-color-dark);
+    color: var(--secondary-color);
+    bottom: 20px;
+    right: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 99; /* stay above everything */
+    transition: all 0.3s ease;
+}
+
+.get-quote-btn:hover {
+    transform: translateY(-5px);
+    background-color: #cdcd01;
+    box-shadow: 0 8px 20px rgba(238, 255, 0, 0.2);
+
+}
+
 /*logo-fixed*/
