@@ -137,7 +137,7 @@ export default function ServiceCategorySlider() {
 
         {/* 👇 Extra section only when item clicked */}
         {selectedIndex !== null && isPlaying === false && (
-          <div className="details-container col-12 col-md-2">
+          <div className="details-container d-none d-lg-block col-12 col-md-2">
             <div className="extra-images mt-4">
               <div className="d-flex flex-column align-items-end gap-3">
                 {MAIN_SERVICES[selectedIndex]?.subImages?.map((img, idx) => (

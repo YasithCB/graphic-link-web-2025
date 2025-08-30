@@ -58,3 +58,16 @@
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.68);
 }
+
+
+/*mobile grid*/
+.accordion-button{
+    background: black !important;
+    color: white;
+}
+.accordion-item {
+    background: transparent;
+    color: white !important;
+    border: none;
+}
+/*mobile grid*/

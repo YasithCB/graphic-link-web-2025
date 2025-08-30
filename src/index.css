@@ -12,9 +12,6 @@ body {
     background-color: #111111 !important;
     color: white; /* optional, makes text visible */
 }
-p{
-    font-weight: 600 !important;
-}
 /* Hide scrollbar : For Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     display: none;
@@ -24,7 +21,6 @@ html {
     scrollbar-width: none; /* hides scrollbar */
 }
 a, Link{
-    font-weight: 600 !important;
     text-decoration: none !important;
     cursor: pointer;
 }
@@ -47,9 +43,6 @@ button {
 
 /* Mobile view */
 @media (max-width: 768px) {
-    body {
-        margin: 15px !important;
-    }
     p{
         font-size: 12px !important;
     }
@@ -59,6 +52,12 @@ button {
 
     .sub-title{
         font-size: 0.7rem !important;
+    }
+    .get-quote-btn {
+        font-size: 10px !important;
+        bottom: 10px !important;
+        right: 10px !important;
+        padding: 5px 10px !important;
     }
 }
 
@@ -96,6 +95,7 @@ button {
     display: block;
     text-transform: uppercase;
     font-size: 1rem;
+    margin: 0 30px;
     letter-spacing: 3px;
     color: rgba(255, 255, 255, 0.2);
     font-weight: 600;
@@ -151,7 +151,6 @@ button {
     transform: translateY(-5px);
     background-color: #cdcd01;
     box-shadow: 0 8px 20px rgba(238, 255, 0, 0.2);
-
 }
 
 /*logo-fixed*/

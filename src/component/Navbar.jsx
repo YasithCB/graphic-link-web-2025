@@ -115,26 +115,10 @@ export default function Navbar() {
 
       {/* 🔹 Mobile Menu */}
       {isMobileOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center z-50 text-white text-xl">
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col z-50 text-white text-xl">
           <button className="absolute top-6 right-6" onClick={() => setMobileOpen(false)}>
             <FaTimes size={28} />
           </button>
-
-          {/* Info Strip Inside Mobile Menu */}
-          <div className="mb-8 text-center text-sm space-y-3">
-            <p className="flex items-center gap-2 justify-center">
-              <FaPhone /> +971 50 123 4567
-            </p>
-            <p className="flex items-center gap-2 justify-center">
-              <FaEnvelope /> info@example.com
-            </p>
-            <p className="flex items-center gap-2 justify-center">
-              <FaGlobe /> www.example.com
-            </p>
-            <p className="flex items-center gap-2 justify-center">
-              <FaMapMarkerAlt /> Dubai, UAE
-            </p>
-          </div>
 
           <ul className="flex flex-col gap-6">
             <li>

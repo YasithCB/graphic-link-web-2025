@@ -56,13 +56,15 @@ export default function Footer() {
               <i className="fas fa-phone fs-4"></i>
             </div>
             <div className="col-8">
-              <h5 className="m-0">Call Us</h5>
-              <a className="text-white-50" href={`tel:${CONTACT_1}`}>
-                {CONTACT_1}
-              </a>
-              <a className="text-white-50" href={`tel:${CONTACT_2}`}>
-                {CONTACT_2}
-              </a>
+              <h5>Call Us</h5>
+              <div className="d-flex flex-column">
+                <a className="text-white-50" href={`tel:${CONTACT_1}`}>
+                  {CONTACT_1}
+                </a>
+                <a className="text-white-50" href={`tel:${CONTACT_2}`}>
+                  {CONTACT_2}
+                </a>
+              </div>
             </div>
           </div>
         </div>

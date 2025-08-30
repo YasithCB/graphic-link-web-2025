@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "../assets/css/home/OurClients.css";
 import { AOS_CONFIG } from "../data/constants";
 
 export default function OurClients() {
@@ -20,7 +19,7 @@ export default function OurClients() {
         </div>
 
         {/*logos*/}
-        <img src="/images/home/all-clients.svg" alt="clients-logo" />
+        <img src="/images/home/all-clients.svg" className="clients-img" alt="clients-logo" />
       </div>
     </section>
   );

@@ -56,7 +56,7 @@ function Layout() {
       <Navbar />
 
       {/* Static logo on top-left */}
-      <div className="logo-fixed" {...AOS_CONFIG.zoom}>
+      <div className="logo-fixed d-none d-lg-block" {...AOS_CONFIG.zoom}>
         <img src="/images/logo/logo-white.svg" alt="Logo" />
       </div>
 
