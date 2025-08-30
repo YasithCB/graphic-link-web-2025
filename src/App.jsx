@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Outlet, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet, useLocation, NavLink } from "react-router-dom";
 import React, { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import AOS from "aos";
@@ -36,8 +36,8 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
           <Route path="careers" element={<Careers />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
@@ -61,9 +61,9 @@ function Layout() {
       </div>
 
       {/* Floating Get Quote Button */}
-      <a href="/contact" className="get-quote-btn d-flex align-items-center gap-2">
+      <NavLink to="/contact" className="get-quote-btn d-flex align-items-center gap-2">
         <i className="fas fa-file-import"></i> Get Quote
-      </a>
+      </NavLink>
 
       {/* Page content goes here */}
       <main className="portfolio-wrap">

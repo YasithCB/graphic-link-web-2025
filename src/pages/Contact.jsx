@@ -4,7 +4,7 @@ import AOS from "aos";
 import "../assets/css/Contact.css";
 import PageHeader from "../component/PageHeader";
 import ContactForm from "../component/ContactForm";
-import { AOS_CONFIG } from "../data/constants";
+import { ADDRESS, AOS_CONFIG, CONTACT_1, EMAIL, WEBSITE } from "../data/constants";
 
 export default function Contact() {
   useEffect(() => {
@@ -54,9 +54,11 @@ export default function Contact() {
                     </div>
                     <div>
                       <h6 className="fw-bolder m-0">Official Address</h6>
-                      <p>
-                        13B-M44-Musaffah Industrial <br /> Abu Dhabi, UAE
-                      </p>
+                      {ADDRESS.map((line, index) => (
+                        <p key={index} className="text-secondary-emphasis m-0">
+                          {line}
+                        </p>
+                      ))}
                     </div>
                   </div>
 
@@ -67,8 +69,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h6 className="fw-bolder m-0">Call Us</h6>
-                      <a className="text-secondary-emphasis" href="tel:+971506302270">
-                        +971 50 630 2270
+                      <a className="text-secondary-emphasis" href={`tel:${CONTACT_1}`}>
+                        {CONTACT_1}
                       </a>
                     </div>
                   </div>
@@ -80,8 +82,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h6 className="fw-bolder m-0">Email</h6>
-                      <a className="text-secondary-emphasis" href="mailto:info@graphiclink.com">
-                        info@graphiclink.ae
+                      <a className="text-secondary-emphasis" href={`mailto:${EMAIL}`}>
+                        {EMAIL}
                       </a>
                     </div>
                   </div>
@@ -93,7 +95,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h6 className="fw-bolder m-0">Website</h6>
-                      <p>www.graphiclink.ae</p>
+                      <p>{WEBSITE}</p>
                     </div>
                   </div>
                 </div>

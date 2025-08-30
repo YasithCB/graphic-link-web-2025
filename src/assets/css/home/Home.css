@@ -32,8 +32,8 @@
 }
 
 .img-square {
-    width: 200px;   /* adjust size */
-    height: 200px;  /* keep same width & height for square */
+    width: 180px;   /* adjust size */
+    height: 180px;  /* keep same width & height for square */
     overflow: hidden;
     border-radius: 10px; /* optional */
 }

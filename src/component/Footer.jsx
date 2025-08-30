@@ -2,6 +2,7 @@ import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "../assets/css/Footer.css";
+import { ADDRESS, CONTACT_1, CONTACT_2, EMAIL } from "../data/constants";
 
 export default function Footer() {
   return (
@@ -22,9 +23,11 @@ export default function Footer() {
             {/* Text column */}
             <div className="col-8">
               <h5 className="m-0">Official Address</h5>
-              <p className="text-white-50">
-                13B-M44-Musaffah Industrial <br /> Abu Dhabi, UAE
-              </p>
+              {ADDRESS.map((line, index) => (
+                <p key={index} className="text-white-50 m-0">
+                  {line}
+                </p>
+              ))}
             </div>
           </div>
         </div>
@@ -41,8 +44,8 @@ export default function Footer() {
             </div>
             <div className="col-8">
               <h5 className="m-0">Email Us</h5>
-              <a className="text-white-50" href="mailto:info@graphiclink.com">
-                info@graphiclink.com
+              <a className="text-white-50" href={`mailto:${EMAIL}`}>
+                {EMAIL}
               </a>
             </div>
           </div>
@@ -54,11 +57,11 @@ export default function Footer() {
             </div>
             <div className="col-8">
               <h5 className="m-0">Call Us</h5>
-              <a className="text-white-50 d-block" href="tel:+971506302270">
-                +971 50 630 2270
+              <a className="text-white-50" href={`tel:${CONTACT_1}`}>
+                {CONTACT_1}
               </a>
-              <a className="text-white-50" href="tel:+971507674073">
-                +971 50 767 4073
+              <a className="text-white-50" href={`tel:${CONTACT_2}`}>
+                {CONTACT_2}
               </a>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className="my-navbar-full">
       {/* 🔹 Top Info Strip */}
       <div className="bg-yellow secondary-text text-sm py-2 d-none d-lg-block justify-content-center">
-        <div className="container d-flex justify-content-center gap-5">
+        <div className="container d-flex justify-content-center gap-5 fs-7">
           <span className="d-flex align-items-center gap-2">
             <FaPhone />{" "}
             <a className="text-secondary-emphasis" href="tel:+971506302270">
@@ -45,7 +45,7 @@ export default function Navbar() {
       </div>
 
       {/* 🔹 Main Navbar */}
-      <div className="container-fluid my-navbar-main flex items-center justify-between py-3 px-4">
+      <div className="container-fluid my-navbar-main flex items-center justify-between py-3 px-4 fs-7">
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="menu flex gap-6 font-medium">

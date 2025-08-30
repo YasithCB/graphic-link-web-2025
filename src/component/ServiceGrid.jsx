@@ -117,7 +117,7 @@ export default function ServicesGrid() {
           >
             <div className="row align-items-center mb-3">
               <div className="icon-bg col-1">{service.icon}</div>
-              <h4 className="col m-0">{service.title}</h4>
+              <h4 className="col m-0 text-white">{service.title}</h4>
             </div>
             <ul>
               {service.items.map((item, i) => (

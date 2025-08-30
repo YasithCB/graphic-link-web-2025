@@ -4,7 +4,7 @@ import PersonCardLandscape from "./PersonCardLandscape";
 export default function TeamSlider({ list }) {
   return (
     <div className="overflow-hidden w-full">
-      <div className="row justify-content-between">
+      <div className="row">
         {list.map((member, index) => (
           <PersonCardLandscape
             key={index}
