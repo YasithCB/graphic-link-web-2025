@@ -11,6 +11,14 @@
 }
 .my-navbar-main{
     height: 10vh !important;
+    width: 100%;
+}
+.navbar-logo-mobile{
+    height: 100%;
+    padding : 30px;
+}
+.navbar-close-btn:hover{
+    background-color: darkred;
 }
 
 /* Active Nav Item */

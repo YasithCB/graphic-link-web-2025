@@ -12,11 +12,12 @@ import {
 } from "react-icons/fa";
 
 import "../assets/css/Navbar.css";
+import { AOS_CONFIG } from "../data/constants";
 
 export default function Navbar() {
   const [isMobileOpen, setMobileOpen] = useState(false);
 
-  const linkClass = ({ isActive }) => (isActive ? "active-nav-item" : "hover:text-blue-400");
+  const linkClass = ({ isActive }) => (isActive ? "active-nav-item" : "text-white");
 
   return (
     <nav className="my-navbar-full">
@@ -45,7 +46,7 @@ export default function Navbar() {
       </div>
 
       {/* 🔹 Main Navbar */}
-      <div className="container-fluid my-navbar-main flex items-center justify-between py-3 px-4 fs-7">
+      <div className="container-fluid my-navbar-main d-inline-flex d-lg-flex p-0 py-lg-3 px-lg-4 fs-7">
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <ul className="menu flex gap-6 font-medium">
@@ -115,43 +116,52 @@ export default function Navbar() {
 
       {/* 🔹 Mobile Menu */}
       {isMobileOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex flex-col z-50 text-white text-xl">
-          <button className="absolute top-6 right-6" onClick={() => setMobileOpen(false)}>
-            <FaTimes size={28} />
-          </button>
-
-          <ul className="flex flex-col gap-6">
-            <li>
-              <NavLink to="/" className={linkClass} onClick={() => setMobileOpen(false)}>
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className={linkClass} onClick={() => setMobileOpen(false)}>
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/services" className={linkClass} onClick={() => setMobileOpen(false)}>
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects" className={linkClass} onClick={() => setMobileOpen(false)}>
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/careers" className={linkClass} onClick={() => setMobileOpen(false)}>
-                Careers
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact" className={linkClass} onClick={() => setMobileOpen(false)}>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
+        <div className="fixed inset-0 bg-transparent bg-opacity-90 d-flex justify-content-between mx-4 my-2">
+          <div className="col-6">
+            <div className="navbar-logo-mobile" {...AOS_CONFIG.zoom}>
+              <img src="/images/logo/logo-white.svg" alt="Logo" />
+            </div>
+          </div>
+          <div className="col-4 my-4">
+            <ul className="d-flex flex-column gap-1 h-100 align-items-end justify-content-between me-3">
+              <li>
+                <NavLink to="/" className={linkClass} onClick={() => setMobileOpen(false)}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" className={linkClass} onClick={() => setMobileOpen(false)}>
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/services" className={linkClass} onClick={() => setMobileOpen(false)}>
+                  Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/projects" className={linkClass} onClick={() => setMobileOpen(false)}>
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/careers" className={linkClass} onClick={() => setMobileOpen(false)}>
+                  Careers
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact" className={linkClass} onClick={() => setMobileOpen(false)}>
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <div
+            className="col-1 navbar-close-btn d-flex align-items-center justify-content-center bg-yellow"
+            onClick={() => setMobileOpen(false)}
+          >
+            <FaTimes size={18} />
+          </div>
         </div>
       )}
     </nav>
