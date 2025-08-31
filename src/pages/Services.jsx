@@ -3,7 +3,6 @@ import "../assets/css/services/Services.css";
 import PageHeader from "../component/PageHeader";
 import React from "react";
 import ServiceCategorySlider from "../component/ServiceCategorySlider";
-import ServiceGallery from "../component/ServiceGallery";
 import ServicesGrid from "../component/ServiceGrid";
 
 export default function Services() {

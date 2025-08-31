@@ -61,6 +61,11 @@ function Layout() {
         <img src="/images/logo/logo-white.svg" alt="Logo" />
       </div>
 
+      <div className="robot-3d">
+        {/* 3D Robot */}
+        <Spline scene="https://prod.spline.design/shlAfB64AuKJiR4D/scene.splinecode" />
+      </div>
+
       {/* Floating Get Quote Button */}
       <NavLink to="/contact" className="get-quote-btn d-flex align-items-center gap-2">
         <i className="fas fa-file-import"></i> Get Quote
