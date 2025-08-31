@@ -1,7 +1,6 @@
 import React, { memo, useEffect, useState } from "react";
 import "../assets/css/home/Home.css";
 import ServiceCategorySlider from "../component/ServiceCategorySlider";
-import ServiceGallery from "../component/ServiceGallery";
 import OurClients from "../component/OurClients";
 import OurMembers from "../component/OurMembers";
 import ServicesGrid from "../component/ServiceGrid";

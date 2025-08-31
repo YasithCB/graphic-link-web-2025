@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
 import { AOS_CONFIG } from "./data/constants";
 import ScrollToTop from "./component/ScrollToTop";
+import Spline from "@splinetool/react-spline";
 
 export default function App() {
   return (
@@ -64,6 +65,11 @@ function Layout() {
       <NavLink to="/contact" className="get-quote-btn d-flex align-items-center gap-2">
         <i className="fas fa-file-import"></i> Get Quote
       </NavLink>
+
+      <div className="robot-3d">
+        {/* 3D Robot */}
+        <Spline scene="https://prod.spline.design/U9T-eKQSg7iiS1iZ/scene.splinecode" />
+      </div>
 
       {/* Page content goes here */}
       <main className="portfolio-wrap">

@@ -40,7 +40,6 @@ button {
     background-color: #f3c623 !important;
 }
 
-
 /* Mobile view */
 @media (max-width: 768px) {
     p{
@@ -151,6 +150,21 @@ button {
     transform: translateY(-5px);
     background-color: #cdcd01;
     box-shadow: 0 8px 20px rgba(238, 255, 0, 0.2);
+}
+/*.robot-3d {*/
+/*    position: fixed;*/
+/*    height: 100vh !important;*/
+/*    bottom: 1vh !important;*/
+/*    right: 2vh !important;*/
+/*}*/
+
+.robot-3d{
+    position: fixed;
+    height: 600px;
+    color: var(--secondary-color);
+    bottom: -250px;
+    right: 2vw;
+    z-index: 99; /* stay above everything */
 }
 
 /*logo-fixed*/

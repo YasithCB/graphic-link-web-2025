@@ -13,6 +13,7 @@ import {
   FaBuilding,
 } from "react-icons/fa";
 import { AOS_CONFIG } from "../data/constants";
+import Spline from "@splinetool/react-spline";
 
 const services = [
   {
@@ -177,6 +178,42 @@ export default function ServicesGrid() {
           ))}
         </div>
       )}
+
+      <div className="row my-5 no-gutters align-items-center" {...AOS_CONFIG.fade}>
+        {/*img*/}
+        <div
+          className="col order-md-last img d-flex align-items-center justify-content-center"
+          style={{
+            backgroundImage: "url(/images/home/hero-5.png)",
+            backgroundPosition: "top",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            height: "-webkit-fill-available",
+          }}
+        ></div>
+
+        {/*text*/}
+        <div className="col-md-6 col-12">
+          <div className="text">
+            <div className="px-4 py-5">
+              <div className="desc text-md-right text-white">
+                <div className="absolute">
+                  <p className="fs-5">
+                    Signage In Abu Dhbai, <br />
+                    we have extensive experience with Signage designs, either it is indoor signage,
+                    commercial signage, industrial signage, digital signage or outdoor signage we
+                    have a different plan according to you needs.
+                    <br />
+                    We have designed and constructed many building signs and exhibition stands as
+                    well varying from small space up to full feature-rich business exhibitions
+                    stands.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

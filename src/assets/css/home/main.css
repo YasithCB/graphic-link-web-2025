@@ -1,20 +1,3 @@
-.robot-3d {
-    position: absolute;
-    height: 120vh !important;
-    bottom: -50vh !important;
-    right: 8vh !important;
-}
-/* Mobile view */
-@media (max-width: 768px) {
-    .robot-3d {
-        height: 10vh;   /* smaller height */
-        bottom: -50%;    /* adjust position */
-        left: -20%;         /* example - center in mobile */
-        right: 0;
-        margin: auto;
-    }
-}
-
 .open-profile-btn {
     position: absolute;
     height: 100px;
