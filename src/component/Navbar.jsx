@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="my-navbar-full">
       {/* 🔹 Top Info Strip */}
-      <div className="bg-yellow secondary-text text-sm py-2 d-none d-lg-block justify-content-center">
+      <div className="bg-yellow my-navbar-top secondary-text text-sm py-2 d-none d-lg-flex align-items-center justify-content-center">
         <div className="container d-flex justify-content-center gap-5 fs-7">
           <span className="d-flex align-items-center gap-2">
             <FaPhone />{" "}

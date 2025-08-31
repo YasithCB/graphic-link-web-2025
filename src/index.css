@@ -123,8 +123,8 @@ button {
 /*logo-fixed*/
 .logo-fixed {
     position: fixed;
-    top: 21vh;     /* distance from top */
-    left: 20px;    /* distance from left */
+    top: 18vh;     /* distance from top */
+    left: 25px;    /* distance from left */
     z-index: 9; /* keeps it above other elements */
 }
 

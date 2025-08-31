@@ -6,6 +6,12 @@
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--my-navbar-border);
 }
+.my-navbar-top{
+    height: 6vh;
+}
+.my-navbar-main{
+    height: 10vh !important;
+}
 
 /* Active Nav Item */
 .active-nav-item {
