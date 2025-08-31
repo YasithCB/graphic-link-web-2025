@@ -66,11 +66,6 @@ function Layout() {
         <i className="fas fa-file-import"></i> Get Quote
       </NavLink>
 
-      <div className="robot-3d">
-        {/* 3D Robot */}
-        <Spline scene="https://prod.spline.design/U9T-eKQSg7iiS1iZ/scene.splinecode" />
-      </div>
-
       {/* Page content goes here */}
       <main className="portfolio-wrap">
         <section className="ftco-section p-0">

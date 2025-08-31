@@ -284,12 +284,9 @@ body{
 .arrows{
     position: absolute;
     bottom: 40vh;
-    width: 100vw;
-    max-width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
 }
 #prev,
 #next{

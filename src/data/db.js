@@ -1,14 +1,15 @@
 export const TEAM_MEMBERS = [
   {
-    name: "Inamullah lohani",
-    description: "COO",
-    imageUrl: "images/members/member-1.png",
-  },
-  {
     name: "Salem Abdulla Al Alameri",
     description: "CEO & FOUNDER",
     imageUrl: "images/members/member-2.png",
   },
+  {
+    name: "Inamullah lohani",
+    description: "COO-Chief Operating Officer",
+    imageUrl: "images/members/member-1.png",
+  },
+
   {
     name: "Sandeep Wijesooriya",
     description: "Head of Graphic Designer",

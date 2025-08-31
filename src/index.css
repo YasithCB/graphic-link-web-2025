@@ -160,11 +160,11 @@ button {
 
 .robot-3d{
     position: fixed;
-    height: 600px;
+    height: 390px;
     color: var(--secondary-color);
-    bottom: -250px;
-    right: 2vw;
-    z-index: 99; /* stay above everything */
+    bottom: -111px;
+    right: -43px;
+    z-index: 99;
 }
 
 /*logo-fixed*/
